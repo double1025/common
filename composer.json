@@ -1,0 +1,21 @@
+{
+  "name": "xwx/common",
+  "authors": [
+    {
+      "name": "Double",
+      "email": "459624123@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.0",
+    "nesbot/carbon": "^2.14"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "XWX\\Common\\": "src/"
+    }
+  }
+}
