@@ -12,7 +12,7 @@ trait TraitHelper
      *
      * @return string
      */
-    static function funcGetV()
+    function funcGetV()
     {
         return (int)(time() / (60 * 10)) . 'a';
     }
@@ -24,7 +24,7 @@ trait TraitHelper
      * @return string
      * @throws \Exception
      */
-    static function funcGetID($prefix = '')
+    function funcGetID($prefix = '')
     {
         return uniqid(str_replace('_', '-', $prefix)) . self::funcGetOrderID();
     }
@@ -35,18 +35,18 @@ trait TraitHelper
      * @return int
      * @throws \Exception
      */
-    static function funcGetOrderID()
+    function funcGetOrderID()
     {
         return date('YmdHis') . uniqid() . random_int(10000, 99999);
     }
 
 
-    static function now()
+    function now()
     {
         return \Carbon::now();
     }
 
-    static function today()
+    function today()
     {
         return \Carbon::today();
     }

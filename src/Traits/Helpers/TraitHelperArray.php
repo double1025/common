@@ -6,23 +6,13 @@ namespace XWX\Common\Traits\Helpers;
 trait TraitHelperArray
 {
     /**
-     * @param $arr
-     * @return \App\X\XArray
-     */
-    static function XArray($arr)
-    {
-        return \App\X\XArray::funcIns($arr);
-    }
-
-
-    /**
      * 根据key获取数组值，若无key，则null
      *
      * @param type $arr
      * @param type $key
      * @return type
      */
-    static function funcArrayGet(& $arr, $key)
+    function funcArrayGet(& $arr, $key)
     {
         if (is_array($arr))
         {
@@ -41,7 +31,7 @@ trait TraitHelperArray
      * @param type $arr
      * @return type
      */
-    static function funcArrayRand(& $arr)
+    function funcArrayRand(& $arr)
     {
         if (is_array($arr))
         {

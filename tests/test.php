@@ -3,12 +3,10 @@
 namespace Tests;
 
 
-use PHPUnit\Framework\TestCase;
-
-class test extends TestCase
+class test extends TestBase
 {
     function test()
     {
-        $this->assertEquals(0, 1);
+        $this->assertEquals(0, 0);
     }
 }

@@ -3,29 +3,25 @@
 namespace XWX\Common;
 
 
+use XWX\Common\Traits\TraitIns;
+
 class XArray
 {
+    use TraitIns;
+
     private $pub_arr;
 
 
-    /**
-     * 初始化
-     *
-     * @param $arr
-     * @return XArray
-     */
-    static function funcIns($arr)
+    public function __construct(& $arr)
     {
         if ($arr == null || count($arr) <= 0)
         {
             $arr = [];
         }
 
-        $app = new XArray();
-        $app->pub_arr = $arr;
-
-        return $app;
+        $this->pub_arr = $arr;
     }
+
 
     /**
      * 用于链式调用，操作自己

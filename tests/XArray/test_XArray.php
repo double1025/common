@@ -1,15 +1,13 @@
 <?php
 
-namespace Test\XArray;
+namespace Tests\XArray;
 
-use PHPUnit\Framework\TestCase;
+use Tests\TestBase;
+use XWX\Common\Helper;
+use XWX\Common\XArray\XArrBase;
 
-class testXArray extends TestCase
+class test_XArray extends TestBase
 {
-    /**
-     *
-     * @return \App\X\XArray
-     */
     function funcGetArr()
     {
         $arr = [
@@ -38,17 +36,16 @@ class testXArray extends TestCase
 
         $list = [$arr, $arr1, $arr2];
 
-        $arr = \h::XArray($list);
+
+        $arr = XArrBase::funcIns($list);
 
 
         return $arr;
     }
 
-    function testWhere()
+
+    function test_Where()
     {
-        class_alias(\App\H::class, 'h');
-
-
         $arr = $this->funcGetArr();
 
         $x = $arr->where('abc_id', '5')->first();
@@ -62,19 +59,19 @@ class testXArray extends TestCase
 
         $x3 = $arr->where('abc_table', 'pp', function ($a, $b)
         {
-            return \h::funcStrEndsWith($a, $b);
+            return $this->H()->funcStrEndsWith($a, $b);
         })->first();
         $this->assertTrue($x3['abc_table'] === 'app', '检查where[匿名函数]');
     }
 
-    function testSelect()
+    function test_Select()
     {
         $arr = $this->funcGetArr();
 
         $x = $arr->select('abc_id,abc_table,abc_site_id')->get();
         $this->assertCount(3, $x, 'select检查数量');
-        $this->assertTrue(\h::funcArrayGet($x[0], 'abc_order') == null, '检查select不存在的字段');
-        $this->assertTrue(\h::funcArrayGet($x[0], 'abc_site_id') != null, '检查select存在的字段');
+        $this->assertTrue($this->H()::funcArrayGet($x[0], 'abc_order') == null, '检查select不存在的字段');
+        $this->assertTrue($this->H()::funcArrayGet($x[0], 'abc_site_id') != null, '检查select存在的字段');
 
         $x1 = $arr->select('abc_id', true)->get();
         $this->assertEquals([['1'], ['2'], ['3']], $x1, '检查select只显示值');
@@ -82,9 +79,8 @@ class testXArray extends TestCase
         $x2 = $arr->select('abc_id,abc_order', true)->toArr1()->get();
         $this->assertEquals(['1', 1, '2', 2, '3', 3], $x2, '检查select只显示值，变1维数组');
     }
-
-
-    function testOrder()
+    
+    function test_Order()
     {
         $arr = $this->funcGetArr();
 

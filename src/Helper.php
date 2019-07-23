@@ -6,10 +6,11 @@ namespace XWX\Common;
 use XWX\Common\Traits\Helpers\TraitHelper;
 use XWX\Common\Traits\Helpers\TraitHelperArray;
 use XWX\Common\Traits\Helpers\TraitHelperStr;
+use XWX\Common\Traits\TraitIns;
 
 class Helper
 {
-    use TraitHelper, TraitHelperStr, TraitHelperArray;
+    use TraitIns, TraitHelper, TraitHelperStr, TraitHelperArray;
 
 
     function test()

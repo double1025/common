@@ -12,7 +12,7 @@ trait TraitHelperStr
      * @param int $def
      * @return int
      */
-    static function funcStrToInt($s, $def = 0)
+    function funcStrToInt($s, $def = 0)
     {
         if (is_numeric($s))
         {
@@ -29,7 +29,7 @@ trait TraitHelperStr
      * @param $max
      * @return bool|string
      */
-    static function funcStrMaxLen($s, $max)
+    function funcStrMaxLen($s, $max)
     {
         $s_len = strlen($s);
         if ($s_len < $max)
@@ -47,9 +47,9 @@ trait TraitHelperStr
      * @param $end
      * @return bool
      */
-    static function funcStrEndsWith($s, $end)
+    function funcStrEndsWith($s, $end)
     {
-        if (funcStrIsNullOrEmpty($end))
+        if ($this->funcStrIsNullOrEmpty($end))
         {
             return true;
         }
@@ -65,9 +65,9 @@ trait TraitHelperStr
      * @param type $start
      * @return boolean
      */
-    static function funcStrStartsWith($s, $start)
+    function funcStrStartsWith($s, $start)
     {
-        if (funcStrIsNullOrEmpty($start))
+        if ($this->funcStrIsNullOrEmpty($start))
         {
             return true;
         }
@@ -86,7 +86,7 @@ trait TraitHelperStr
      * @param type $s
      * @return boolean
      */
-    static function funcStrIsNullOrEmpty($s)
+    function funcStrIsNullOrEmpty($s)
     {
         if ($s === null)
         {
@@ -110,9 +110,9 @@ trait TraitHelperStr
      * @param type $s
      * @return bool
      */
-    static function funcStrHasAnyText($s)
+    function funcStrHasAnyText($s)
     {
-        return !self::funcStrIsNullOrEmpty($s);
+        return !$this->funcStrIsNullOrEmpty($s);
     }
 
 
@@ -122,7 +122,7 @@ trait TraitHelperStr
      * @param $s
      * @return string
      */
-    static function funcStrMD5($s)
+    function funcStrMD5($s)
     {
         $str = md5($s);
         $STR = strtoupper($str);
@@ -136,7 +136,7 @@ trait TraitHelperStr
      * @param $s
      * @return string
      */
-    static function funcStrSHA1($s)
+    function funcStrSHA1($s)
     {
         $str = sha1($s);
         $STR = strtoupper($str);
