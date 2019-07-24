@@ -19,7 +19,7 @@ class XArrBase
      * @param $arr
      * @return XArrBase
      */
-    public function funcIns(& $arr)
+    static public function funcIns(& $arr)
     {
         if ($arr === null || count($arr) <= 0)
         {

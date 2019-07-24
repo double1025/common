@@ -3,7 +3,6 @@
 namespace Tests\XArray;
 
 use Tests\TestBase;
-use XWX\Common\Helper;
 use XWX\Common\XArray\XArrBase;
 
 class test_XArray extends TestBase
@@ -70,8 +69,8 @@ class test_XArray extends TestBase
 
         $x = $arr->select('abc_id,abc_table,abc_site_id')->get();
         $this->assertCount(3, $x, 'select检查数量');
-        $this->assertTrue($this->H()::funcArrayGet($x[0], 'abc_order') == null, '检查select不存在的字段');
-        $this->assertTrue($this->H()::funcArrayGet($x[0], 'abc_site_id') != null, '检查select存在的字段');
+        $this->assertTrue($this->H()->funcArrayGet($x[0], 'abc_order') == null, '检查select不存在的字段');
+        $this->assertTrue($this->H()->funcArrayGet($x[0], 'abc_site_id') != null, '检查select存在的字段');
 
         $x1 = $arr->select('abc_id', true)->get();
         $this->assertEquals([['1'], ['2'], ['3']], $x1, '检查select只显示值');
@@ -79,7 +78,7 @@ class test_XArray extends TestBase
         $x2 = $arr->select('abc_id,abc_order', true)->toArr1()->get();
         $this->assertEquals(['1', 1, '2', 2, '3', 3], $x2, '检查select只显示值，变1维数组');
     }
-    
+
     function test_Order()
     {
         $arr = $this->funcGetArr();

@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c701b4c4-1c67-4e1f-832e-3401fa8f8d20" name="默认" comment="">
-      <change afterPath="$PROJECT_DIR$/src/XArray/XArr1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/XArray/XArr2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/XArray/XArrBase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/TestBase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/XReturn.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Traits/Helpers/TraitHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/Helpers/TraitHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperArray.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperArray.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperStr.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperStr.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/XArray.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/XArray.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/XArray/testXArray.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/XArray/test_XArray.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/XArray/XArrBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/XArray/XArrBase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TestBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestBase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/XArray/test_XArray.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/XArray/test_XArray.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_base.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,43 +18,46 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/common$test_XArray.xml" NAME="test_XArray Coverage Results" MODIFIED="1563935873489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="PhpCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1756133161">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="2" />
-          <entry key="json" value="1" />
-          <entry key="php" value="36" />
+          <entry key="json" value="2" />
+          <entry key="php" value="46" />
           <entry key="phpunit" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="1" />
-          <entry key="PHP" value="37" />
+          <entry key="JSON" value="2" />
+          <entry key="PHP" value="47" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="2" />
+          <entry key="dummy" value="15" />
           <entry key="json" value="42" />
-          <entry key="php" value="172" />
+          <entry key="php" value="839" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="42" />
-          <entry key="PHP" value="172" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PHP" value="839" />
+          <entry key="PLAIN_TEXT" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -125,12 +118,33 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/XArray/XArrBase.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test_base.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="432">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/XReturn.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="503">
+              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/TestBase.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+              <folding>
+                <element signature="e#26#57#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,13 +177,18 @@
         <option value="$PROJECT_DIR$/src/XArray/XArr2.php" />
         <option value="$PROJECT_DIR$/src/XArray/XArr1.php" />
         <option value="$PROJECT_DIR$/tests/XArray/testXArray.php" />
-        <option value="$PROJECT_DIR$/tests/TestBase.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/tests/test.php" />
         <option value="$PROJECT_DIR$/src/Traits/TraitIns.php" />
-        <option value="$PROJECT_DIR$/src/XArray/XArrBase.php" />
         <option value="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperStr.php" />
+        <option value="$PROJECT_DIR$/src/XArray/XArrBase.php" />
         <option value="$PROJECT_DIR$/tests/XArray/test_XArray.php" />
+        <option value="$PROJECT_DIR$/tests/test_compare.php" />
+        <option value="$PROJECT_DIR$/tests/TestData.php" />
+        <option value="$PROJECT_DIR$/src/CommonReturn.php" />
+        <option value="$PROJECT_DIR$/src/XReturn.php" />
+        <option value="$PROJECT_DIR$/tests/TestBase.php" />
+        <option value="$PROJECT_DIR$/tests/test_base.php" />
       </list>
     </option>
   </component>
@@ -256,25 +275,29 @@
             <path>
               <item name="common" type="b2602c69:ProjectViewProjectNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Traits" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="XArray" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="外部库" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="外部库" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+            </path>
+            <path>
+              <item name="common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="外部库" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="外部库" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="XArray" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -284,16 +307,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor/phpunit/phpunit/phpunit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="php.test.frameworks.configurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\_job\common\src" />
+      <recent name="H:\_job\common\tests" />
       <recent name="D:\_job\common\src\Array" />
       <recent name="H:\_job\common\test\XArray" />
-      <recent name="H:\_job\common\src" />
       <recent name="H:\_job\common\src\WebClient" />
     </key>
   </component>
@@ -309,41 +333,41 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.test_XArray">
+  <component name="RunManager" selected="PHPUnit.test_base">
     <configuration name="TestBase" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\TestBase" file="$PROJECT_DIR$/tests/TestBase.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="test (1)" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\test" directory="$PROJECT_DIR$/tests" file="$PROJECT_DIR$/tests/test.php" />
+      <TestRunner class="Tests\test" directory="$PROJECT_DIR$/tests" file="$PROJECT_DIR$/tests/test_base.php" />
       <method v="2" />
     </configuration>
     <configuration name="test" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\test" file="$PROJECT_DIR$/tests/test.php" scope="Class" />
+      <TestRunner class="Tests\test" file="$PROJECT_DIR$/tests/test_base.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="test_XArray" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\XArray\test_XArray" file="$PROJECT_DIR$/tests/XArray/test_XArray.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="test_XArray.testWhere" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\XArray\test_XArray" file="$PROJECT_DIR$/tests/XArray/test_XArray.php" method="testWhere" scope="Method" />
+    <configuration name="test_base" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\test_base" file="$PROJECT_DIR$/tests/test_base.php" scope="Class" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="PHPUnit.test (1)" />
       <item itemvalue="PHPUnit.test_XArray" />
       <item itemvalue="PHPUnit.TestBase" />
-      <item itemvalue="PHPUnit.test_XArray.testWhere" />
       <item itemvalue="PHPUnit.test" />
+      <item itemvalue="PHPUnit.test_base" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.test_base" />
         <item itemvalue="PHPUnit.test_XArray" />
         <item itemvalue="PHPUnit.test" />
         <item itemvalue="PHPUnit.TestBase" />
         <item itemvalue="PHPUnit.test (1)" />
-        <item itemvalue="PHPUnit.test_XArray.testWhere" />
       </list>
     </recent_temporary>
   </component>
@@ -362,43 +386,44 @@
       <workItem from="1563806127494" duration="2993000" />
       <workItem from="1563890191829" duration="35000" />
       <workItem from="1563890395741" duration="5288000" />
+      <workItem from="1563931030362" duration="8255000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test - 2019.07.23 at 23h 18m 12s.xml">
-      <configuration name="test" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_base - 2019.07.24 at 11h 21m 27s.xml">
+      <configuration name="test_base" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_XArray - 2019.07.23 at 23h 18m 16s.xml">
-      <configuration name="test_XArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_base - 2019.07.24 at 11h 23m 15s.xml">
+      <configuration name="test_base" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_XArray - 2019.07.23 at 23h 18m 52s.xml">
-      <configuration name="test_XArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_base - 2019.07.24 at 11h 23m 30s.xml">
+      <configuration name="test_base" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_XArray - 2019.07.23 at 23h 19m 01s.xml">
-      <configuration name="test_XArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_base - 2019.07.24 at 11h 24m 41s.xml">
+      <configuration name="test_base" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_XArray - 2019.07.23 at 23h 19m 14s.xml">
-      <configuration name="test_XArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_base - 2019.07.24 at 13h 34m 20s.xml">
+      <configuration name="test_base" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_XArray - 2019.07.23 at 23h 19m 22s.xml">
-      <configuration name="test_XArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_base - 2019.07.24 at 13h 43m 40s.xml">
+      <configuration name="test_base" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_XArray - 2019.07.23 at 23h 23m 26s.xml">
-      <configuration name="test_XArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_base - 2019.07.24 at 13h 47m 19s.xml">
+      <configuration name="test_base" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_XArray - 2019.07.23 at 23h 26m 23s.xml">
-      <configuration name="test_XArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_base - 2019.07.24 at 13h 48m 09s.xml">
+      <configuration name="test_base" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_XArray - 2019.07.23 at 23h 27m 03s.xml">
-      <configuration name="test_XArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_base - 2019.07.24 at 13h 49m 10s.xml">
+      <configuration name="test_base" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_XArray - 2019.07.23 at 23h 27m 28s.xml">
-      <configuration name="test_XArray" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_base - 2019.07.24 at 13h 50m 43s.xml">
+      <configuration name="test_base" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20844000" />
+    <option name="totallyTimeSpent" value="29099000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -410,15 +435,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2660858" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2700454" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4557377" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -428,6 +452,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3295082" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.23512748" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -514,16 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="e#31#73#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_defines.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -531,56 +546,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/XArray/XArr1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="31" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/XArray/XArr2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="75" column="24" lean-forward="true" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
-          <folding>
-            <element signature="e#380#619#0#PHP" />
-            <element signature="e#633#707#0#PHP" />
-            <element signature="e#64#193#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/XArray/XArr1.php" />
+    <entry file="file://$PROJECT_DIR$/src/XArray/XArr2.php" />
     <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/phive.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/phpunit">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/TestBase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding>
-            <element signature="e#26#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -598,28 +572,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/XArray/test_XArray.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="39" column="36" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
-          <folding>
-            <element signature="e#192#360#0#PHP" />
-            <element signature="e#379#550#0#PHP" />
-            <element signature="e#569#740#0#PHP" />
-            <element signature="e#857#1526#0#PHP" />
-            <element signature="e#1313#1438#0#PHP" />
-            <element signature="e#1344#1437#1#PHP" />
-            <element signature="e#1532#2195#0#PHP" />
-            <element signature="e#2163#2598#0#PHP" />
-            <element signature="e#2451#2519#0#PHP" />
-          </folding>
+        <state relative-caret-position="352">
+          <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/XArray/XArrBase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="119">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/XArray/test_XArray.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="67" column="35" lean-forward="true" selection-start-line="67" selection-start-column="35" selection-end-line="67" selection-end-column="35" />
+          <folding>
+            <element signature="e#32#51#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/TestData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="21" />
+          <folding>
+            <element signature="e#31#73#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/TestBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+          <folding>
+            <element signature="e#26#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/XReturn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
         </state>
       </provider>
     </entry>
