@@ -13,8 +13,10 @@ class Helper
     use TraitIns, TraitHelper, TraitHelperStr, TraitHelperArray;
 
 
-    function test()
+    function funcIsWin()
     {
-        return 'test';
+        $w = strtoupper(substr(PHP_OS, 0, 3));
+
+        return $w === 'WIN';
     }
 }

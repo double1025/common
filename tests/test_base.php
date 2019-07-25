@@ -29,4 +29,9 @@ class test_base extends TestBase
         $this->assertTrue(true);
     }
 
+    function test_isWin()
+    {
+        $this->assertTrue($this->H()->funcIsWin());
+    }
+
 }

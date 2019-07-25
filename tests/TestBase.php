@@ -19,7 +19,7 @@ class TestBase extends TestCase
      */
     function H()
     {
-        return Helper::funcIns();
+        return Helper::funcInsStatic();
     }
 
 
