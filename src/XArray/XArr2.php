@@ -5,7 +5,7 @@ namespace XWX\Common\XArray;
 
 use XWX\Common\Helper;
 
-class XArr2 extends XArrBase
+class XArr2 extends XArray
 {
     public function where($where_prop, $where_val, $operator = '=')
     {

@@ -3,9 +3,10 @@
 namespace XWX\Common\XArray;
 
 
+use XWX\Common\Helper;
 use XWX\Common\Traits\TraitIns;
 
-class XArrBase
+class XArray
 {
     use TraitIns;
 
@@ -17,7 +18,7 @@ class XArrBase
      * 初始化
      *
      * @param $arr
-     * @return XArrBase
+     * @return XArray
      */
     static public function funcIns(& $arr)
     {
@@ -57,7 +58,7 @@ class XArrBase
      * 用于链式调用，操作自己
      *
      * @param $arr
-     * @return XArrBase
+     * @return XArray
      */
     protected function funcCall(& $arr)
     {
@@ -70,10 +71,16 @@ class XArrBase
     /**
      * 获取全部数组
      *
-     * @return array
+     * @param null $key
+     * @return mixed
      */
-    public function get()
+    public function get($key = null)
     {
+        if ($key != null)
+        {
+            return Helper::funcInsStatic()->funcArrayGet($this->pub_arr, $key);
+        }
+
         return $this->pub_arr;
     }
 
@@ -108,7 +115,7 @@ class XArrBase
     /**
      * 数组去重取唯一的值
      *
-     * @return XArrBase
+     * @return XArray
      */
     public function unique()
     {
@@ -121,7 +128,7 @@ class XArrBase
      * 自定义过滤器
      *
      * @param callable $func
-     * @return XArrBase
+     * @return XArray
      */
     public function filter(callable $func)
     {
@@ -146,7 +153,7 @@ class XArrBase
      * @param string|callable $operator *运算方式或者自定义函数
      * 自定义函数($where_val,列表值)
      *
-     * @return XArrBase
+     * @return XArray
      */
     function where($where_prop, $where_val, $operator = '=')
     {
@@ -160,7 +167,7 @@ class XArrBase
      *
      * @param string|array $keys *需要筛选key
      * @param bool $only_show_val *只显示值
-     * @return XArrBase
+     * @return XArray
      */
     function select($keys, $only_show_val = false)
     {
@@ -175,7 +182,7 @@ class XArrBase
      *
      * @param $where_prop *条件
      * @param int $sort *SORT_ASC:顺序;SORT_DESC:倒序;
-     * @return XArrBase
+     * @return XArray
      */
     function order($where_prop, $sort = SORT_ASC)
     {
@@ -190,7 +197,7 @@ class XArrBase
     /**
      * 转换成1维数组
      *
-     * @return XArrBase
+     * @return XArray
      */
     function toArr1()
     {

@@ -3,7 +3,7 @@
 namespace Tests\XArray;
 
 use Tests\TestBase;
-use XWX\Common\XArray\XArrBase;
+use XWX\Common\XArray\XArray;
 
 class test_XArray extends TestBase
 {
@@ -36,7 +36,7 @@ class test_XArray extends TestBase
         $list = [$arr, $arr1, $arr2];
 
 
-        $arr = XArrBase::funcIns($list);
+        $arr = XArray::funcIns($list);
 
 
         return $arr;
