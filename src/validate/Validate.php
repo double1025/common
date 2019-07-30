@@ -3,6 +3,9 @@
 namespace XWX\Common\Validate;
 
 
+use XWX\Common\H;
+use XWX\Common\XReturn;
+
 /**
  * 数据验证器
  * Class Validate
@@ -10,17 +13,19 @@ namespace XWX\Common\Validate;
  */
 class Validate
 {
-    protected $columns = [];
+    protected $pub_columns = [];
 
-    protected $error;
-
-    protected $verifiedData = [];
+    protected $pub_errors = [];
 
 
-    function getError(): ?Error
+    /**
+     * @return XReturn[]
+     */
+    function getErrors()
     {
-        return $this->error;
+        return $this->pub_errors;
     }
+
 
     /**
      * 添加一个待验证字段
@@ -31,7 +36,7 @@ class Validate
     public function addColumn(string $name): ValidateFunc
     {
         $v_func = new ValidateFunc();
-        $this->columns[$name] = [
+        $this->pub_columns[$name] = [
             'v_func' => $v_func
         ];
         return $v_func;
@@ -40,48 +45,60 @@ class Validate
     /**
      * 验证字段是否合法
      *
-     * @param array $data
+     * @param array $data 需要验证的keyval
+     * @param bool $validate_all false:验证不能立刻终止;true:会遍历所有验证;
      * @return bool
      */
-    function validate(array $data)
+    function validate(array $data, $validate_all = false)
     {
-        $this->verifiedData = [];
-        $spl = new SplArray($data);
-        foreach ($this->columns as $column => $item)
+        $errors = [];
+        foreach ($this->pub_columns as $key => $item)
         {
-            /** @var Rule $rule */
-            $rule = $item['rule'];
-            $rules = $rule->getRuleMap();
-
-            /*
-             * 优先检测是否带有optional选项
-             * 如果设置了optional又不存在对应字段，则跳过该字段检测
-             */
-            if (isset($rules['optional']) && !isset($data[$column]))
+            if (!array_key_exists($key, $data))
             {
-                $this->verifiedData[$column] = $spl->get($column);
+                //key不存在 next
                 continue;
             }
-            foreach ($rules as $rule => $ruleInfo)
+
+
+            /** @var ValidateFunc $v_func */
+            $v_func = $item['v_func'];
+            $rules = $v_func->getRules();
+
+            $val = H::funcArrayGet($data, $key);
+
+            //遍历所有验证
+            $is_pass = true;
+            foreach ($rules as $rule_key => $rule)
             {
-                if (!call_user_func([$this, $rule], $spl, $column, $ruleInfo['arg']))
+                $r = $rule->funcValidate($val);
+                if ($r->err())
                 {
-                    $this->error = new Error($column, $spl->get($column), $item['alias'], $rule, $ruleInfo['msg'], $ruleInfo['arg']);
-                    return false;
+                    $is_pass = false;
+                    $errors[] = $r;
+                    break;
                 }
             }
-            $this->verifiedData[$column] = $spl->get($column);
-        }
-        return true;
-    }
 
-    /**
-     * 获取验证成功后的数据
-     * @return array
-     */
-    public function getVerifiedData(): array
-    {
-        return $this->verifiedData;
+            if (!$is_pass)
+            {
+                //有字段验证不通过并且不需要验证所有字段，立刻终止
+                if (!$validate_all)
+                {
+                    break;
+                }
+            }
+        }
+
+
+        if (count($errors) > 0)
+        {
+            $this->pub_errors = $errors;
+            return false;
+        }
+
+
+        return true;
     }
 
 

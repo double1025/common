@@ -3,7 +3,7 @@
 namespace Tests;
 
 
-use XWX\Common\Helper;
+use XWX\Common\H;
 
 class TestData
 {
@@ -44,7 +44,7 @@ class TestData
             return $this->data;
         }
 
-        $h = new Helper();
+        $h = new H();
         return $h->funcArrayGet($this->data, $key);
     }
 

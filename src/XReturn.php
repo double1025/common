@@ -16,7 +16,23 @@ class XReturn
     /**
      * @var array
      */
-    public $data = [];
+    public $return_data = [];
+
+
+    public function getData($key = null)
+    {
+        if (H::funcStrHasAnyText($key))
+        {
+            return H::funcArrayGet($this->return_data, $key);
+        }
+
+        return $this->return_data;
+    }
+
+    public function setData($key, $val)
+    {
+        $this->return_data[$key] = $val;
+    }
 
 
     public function setOK()

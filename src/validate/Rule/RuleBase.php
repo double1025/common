@@ -3,28 +3,56 @@
 namespace XWX\Common\validate\Rule;
 
 
+use XWX\Common\H;
+use XWX\Common\Traits\TraitCommon;
+use XWX\Common\XReturn;
+
 abstract class RuleBase
 {
-    private $pub_val; //值
-    private $pub_rule_data; //验证参数，可以是数组
+    use TraitCommon;
+
+    private $pub_args;
+    private $pub_err_msg;
 
 
-    public function __construct($val, $data)
+    public function __construct(array $args, $msg = null)
     {
-        $this->pub_val = $val;
-        $this->pub_rule_data = $data;
+        $this->pub_args = $args;
+        $this->pub_err_msg = $msg;
     }
 
-    public function getVal()
+    /**
+     * 规则参数
+     *
+     * @param null $key
+     * @return array|mixed|null
+     */
+    public function getArgs($key = null)
     {
-        return $this->pub_val;
+        if (H::funcStrHasAnyText($key))
+        {
+            return H::funcArrayGet($this->pub_args, $key);
+        }
+
+        return $this->pub_args;
     }
 
-    public function getRuleData()
+    /**
+     * 验证不通过提示
+     *
+     * @return string
+     */
+    public function getErrMsg(): string
     {
-        return $this->pub_rule_data;
+        return $this->pub_err_msg;
     }
 
 
-    abstract public function funcValidate();
+    /**
+     * 验证
+     *
+     * @param $val
+     * @return mixed
+     */
+    abstract public function funcValidate($val): XReturn;
 }

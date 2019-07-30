@@ -6,14 +6,13 @@ namespace XWX\Common;
 use XWX\Common\Traits\Helpers\TraitHelper;
 use XWX\Common\Traits\Helpers\TraitHelperArray;
 use XWX\Common\Traits\Helpers\TraitHelperStr;
-use XWX\Common\Traits\TraitIns;
 
-class Helper
+class H
 {
-    use TraitIns, TraitHelper, TraitHelperStr, TraitHelperArray;
+    use TraitHelper, TraitHelperStr, TraitHelperArray;
 
 
-    function funcIsWin()
+    static function funcIsWin()
     {
         $w = strtoupper(substr(PHP_OS, 0, 3));
 

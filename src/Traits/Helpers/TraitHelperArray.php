@@ -8,11 +8,11 @@ trait TraitHelperArray
     /**
      * 根据key获取数组值，若无key，则null
      *
-     * @param type $arr
-     * @param type $key
-     * @return type
+     * @param $arr
+     * @param $key
+     * @return mixed|null
      */
-    function funcArrayGet(& $arr, $key)
+    static function funcArrayGet(& $arr, $key)
     {
         if (is_array($arr))
         {
@@ -28,10 +28,10 @@ trait TraitHelperArray
     /**
      * 打乱数组顺序
      *
-     * @param type $arr
-     * @return type
+     * @param $arr
+     * @return array
      */
-    function funcArrayRand(& $arr)
+    static function funcArrayRand(& $arr)
     {
         if (is_array($arr))
         {

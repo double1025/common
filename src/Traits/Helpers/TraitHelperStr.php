@@ -12,7 +12,7 @@ trait TraitHelperStr
      * @param int $def
      * @return int
      */
-    function funcStrToInt($s, $def = 0)
+    static function funcStrToInt($s, $def = 0): int
     {
         if (is_numeric($s))
         {
@@ -29,7 +29,7 @@ trait TraitHelperStr
      * @param $max
      * @return bool|string
      */
-    function funcStrMaxLen($s, $max)
+    static function funcStrMaxLen($s, $max)
     {
         $s_len = strlen($s);
         if ($s_len < $max)
@@ -47,9 +47,9 @@ trait TraitHelperStr
      * @param $end
      * @return bool
      */
-    function funcStrEndsWith($s, $end)
+    static function funcStrEndsWith($s, $end)
     {
-        if ($this->funcStrIsNullOrEmpty($end))
+        if (static::funcStrIsNullOrEmpty($end))
         {
             return true;
         }
@@ -61,13 +61,13 @@ trait TraitHelperStr
     /**
      * 是否以 $start 开头
      *
-     * @param type $s
-     * @param type $start
-     * @return boolean
+     * @param $s
+     * @param $start
+     * @return bool
      */
-    function funcStrStartsWith($s, $start)
+    static function funcStrStartsWith($s, $start)
     {
-        if ($this->funcStrIsNullOrEmpty($start))
+        if (static::funcStrIsNullOrEmpty($start))
         {
             return true;
         }
@@ -83,10 +83,10 @@ trait TraitHelperStr
     /**
      * null or empty
      *
-     * @param type $s
-     * @return boolean
+     * @param $s
+     * @return bool
      */
-    function funcStrIsNullOrEmpty($s)
+    static function funcStrIsNullOrEmpty($s)
     {
         if ($s === null)
         {
@@ -107,12 +107,12 @@ trait TraitHelperStr
     /**
      * not empty
      *
-     * @param type $s
+     * @param $s
      * @return bool
      */
-    function funcStrHasAnyText($s)
+    static function funcStrHasAnyText($s)
     {
-        return !$this->funcStrIsNullOrEmpty($s);
+        return !static::funcStrIsNullOrEmpty($s);
     }
 
 
@@ -122,7 +122,7 @@ trait TraitHelperStr
      * @param $s
      * @return string
      */
-    function funcStrMD5($s)
+    static function funcStrMD5($s)
     {
         $str = md5($s);
         $STR = strtoupper($str);
@@ -136,7 +136,7 @@ trait TraitHelperStr
      * @param $s
      * @return string
      */
-    function funcStrSHA1($s)
+    static function funcStrSHA1($s)
     {
         $str = sha1($s);
         $STR = strtoupper($str);
@@ -155,7 +155,7 @@ trait TraitHelperStr
      * @param bool $do_sort_key
      * @return string
      */
-    function funcStrQueryFromArray($arr, $exclude_list = null
+    static function funcStrQueryFromArray($arr, $exclude_list = null
         , $do_url_encode = true, $do_lower_key = false, $do_sort_key = true)
     {
         $keys = array_keys(array_except($arr, $exclude_list));

@@ -3,6 +3,9 @@
 namespace Tests;
 
 
+use XWX\Common\H;
+use XWX\Common\XReturn;
+
 class test_base extends TestBase
 {
     function test_trueOrFalse()
@@ -32,6 +35,16 @@ class test_base extends TestBase
     function test_isWin()
     {
         $this->assertTrue($this->H()->funcIsWin());
+    }
+
+    function test_xreturn()
+    {
+        $r = new XReturn();
+        $r->errmsg = '123';
+        $r->setData('xx', [123]);
+
+//        var_dump($r);
+        print json_encode($r);
     }
 
 }

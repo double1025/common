@@ -3,7 +3,7 @@
 namespace XWX\Common\XArray;
 
 
-use XWX\Common\Helper;
+use XWX\Common\H;
 use XWX\Common\Traits\TraitIns;
 
 class XArray
@@ -78,7 +78,7 @@ class XArray
     {
         if ($key != null)
         {
-            return Helper::funcInsStatic()->funcArrayGet($this->pub_arr, $key);
+            return H::funcArrayGet($this->pub_arr, $key);
         }
 
         return $this->pub_arr;

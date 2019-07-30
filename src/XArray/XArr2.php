@@ -3,7 +3,7 @@
 namespace XWX\Common\XArray;
 
 
-use XWX\Common\Helper;
+use XWX\Common\H;
 
 class XArr2 extends XArray
 {
@@ -14,7 +14,7 @@ class XArr2 extends XArray
         $arr_new = array();
         foreach ($arr as $key => $val)
         {
-            $val1 = Helper::funcIns()->funcArrayGet($val, $where_prop);
+            $val1 = H::funcIns()->funcArrayGet($val, $where_prop);
             $val2 = $where_val;
 
             $is_ok = false;
