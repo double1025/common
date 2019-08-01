@@ -1,6 +1,6 @@
 <?php
 
-namespace XWX\Common\validate\Rule;
+namespace XWX\Common\Validate\Rule;
 
 
 use XWX\Common\H;
@@ -16,7 +16,7 @@ class Rule_Max extends RuleBase
         }
 
         $val = H::funcStrToInt($val);
-        if ($val > $this->getArgs(0))
+        if ($val >= $this->getArgs(0))
         {
             return $this->funcGetR(-1022, $this->getErrMsg());
         }

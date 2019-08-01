@@ -1,6 +1,6 @@
 <?php
 
-namespace XWX\Common\validate\Rule;
+namespace XWX\Common\Validate\Rule;
 
 
 use XWX\Common\XReturn;

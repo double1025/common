@@ -5,20 +5,22 @@ namespace XWX\Common\Validate\Rule;
 
 use XWX\Common\XReturn;
 
-class Rule_Alpha extends RuleBase
+class Rule_Regex extends RuleBase
 {
     public function funcValidate($val): XReturn
     {
-        if (!is_string($val))
+        $is_pass = false;
+        if (is_numeric($val) || is_string($val))
         {
-            return $this->funcGetR(-1015, $this->getErrMsg());
+            $reg = $this->getArgs(0);
+            $is_pass = preg_match($reg, $val);
         }
 
-        $is_pass = preg_match('/^[a-zA-Z]+$/', $val);
         if (!$is_pass)
         {
             return $this->funcGetR(-1022, $this->getErrMsg());
         }
+
 
         return $this->funcGetR(0);
     }

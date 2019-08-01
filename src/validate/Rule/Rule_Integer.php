@@ -3,17 +3,16 @@
 namespace XWX\Common\Validate\Rule;
 
 
-use XWX\Common\H;
 use XWX\Common\XReturn;
 
-class Rule_Func extends RuleBase
+class Rule_Integer extends RuleBase
 {
     public function funcValidate($val): XReturn
     {
-        $is_pass = call_user_func($this->getArgs(0), $val);
+        $is_pass = filter_var($val, FILTER_VALIDATE_INT) !== false;
         if (!$is_pass)
         {
-            return $this->funcGetR(-1016, $this->getErrMsg());
+            return $this->funcGetR(-1033, $this->getErrMsg());
         }
 
         return $this->funcGetR(0);

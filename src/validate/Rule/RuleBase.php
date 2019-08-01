@@ -1,6 +1,6 @@
 <?php
 
-namespace XWX\Common\validate\Rule;
+namespace XWX\Common\Validate\Rule;
 
 
 use XWX\Common\H;
@@ -15,7 +15,7 @@ abstract class RuleBase
     private $pub_err_msg;
 
 
-    public function __construct(array $args, $msg = null)
+    public function __construct(array & $args, $msg = null)
     {
         $this->pub_args = $args;
         $this->pub_err_msg = $msg;

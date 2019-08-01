@@ -3,22 +3,24 @@
 namespace XWX\Common\Validate\Rule;
 
 
+use XWX\Common\H;
 use XWX\Common\XReturn;
 
-class Rule_Alpha extends RuleBase
+class Rule_Min extends RuleBase
 {
     public function funcValidate($val): XReturn
     {
-        if (!is_string($val))
+        if (!is_numeric($val))
         {
             return $this->funcGetR(-1015, $this->getErrMsg());
         }
 
-        $is_pass = preg_match('/^[a-zA-Z]+$/', $val);
-        if (!$is_pass)
+        $val = H::funcStrToInt($val);
+        if ($val <= $this->getArgs(0))
         {
             return $this->funcGetR(-1022, $this->getErrMsg());
         }
+
 
         return $this->funcGetR(0);
     }

@@ -3,8 +3,26 @@
 namespace XWX\Common\Validate;
 
 use Carbon\Carbon;
-use XWX\Common\validate\Rule\RuleBase;
-use XWX\Common\validate\Rule\RuleMax;
+use XWX\Common\Validate\Rule\Rule_Alpha;
+use XWX\Common\Validate\Rule\Rule_AlphaNumLine;
+use XWX\Common\Validate\Rule\Rule_Between;
+use XWX\Common\Validate\Rule\Rule_Bool;
+use XWX\Common\Validate\Rule\Rule_DateAfter;
+use XWX\Common\Validate\Rule\Rule_DateBefore;
+use XWX\Common\Validate\Rule\Rule_Decimal;
+use XWX\Common\Validate\Rule\Rule_Equal;
+use XWX\Common\Validate\Rule\Rule_Float;
+use XWX\Common\Validate\Rule\Rule_Func;
+use XWX\Common\Validate\Rule\Rule_Integer;
+use XWX\Common\Validate\Rule\Rule_IP;
+use XWX\Common\Validate\Rule\Rule_LenBetween;
+use XWX\Common\Validate\Rule\Rule_LenMax;
+use XWX\Common\Validate\Rule\Rule_LenMin;
+use XWX\Common\Validate\Rule\Rule_Max;
+use XWX\Common\Validate\Rule\Rule_Min;
+use XWX\Common\Validate\Rule\Rule_Regex;
+use XWX\Common\Validate\Rule\Rule_Required;
+use XWX\Common\Validate\Rule\Rule_Url;
 
 /**
  * 校验方法
@@ -35,10 +53,11 @@ class ValidateFunc
      */
     function alpha($msg = null)
     {
-        $this->pub_rules['alpha'] = [
-            'arg' => null,
-            'msg' => $msg
-        ];
+        $arg = [];
+        $rule = new Rule_Alpha($arg, $msg);
+
+        $this->pub_rules['alpha'] = $rule;
+
         return $this;
     }
 
@@ -49,10 +68,11 @@ class ValidateFunc
      */
     function alphaNumLine($msg = null)
     {
-        $this->pub_rules['alphaNum'] = [
-            'arg' => null,
-            'msg' => $msg
-        ];
+        $arg = [];
+        $rule = new Rule_AlphaNumLine($arg, $msg);
+
+        $this->pub_rules['alphaNum'] = $rule;
+
         return $this;
     }
 
@@ -67,12 +87,10 @@ class ValidateFunc
      */
     function between($min, $max, $msg = null)
     {
-        $this->pub_rules['between'] = [
-            'msg' => $msg,
-            'arg' => [
-                $min, $max
-            ]
-        ];
+        $arg = [$min, $max];
+        $rule = new Rule_Between($arg, $msg);
+
+        $this->pub_rules['between'] = $rule;
         return $this;
     }
 
@@ -84,10 +102,10 @@ class ValidateFunc
      */
     function bool($msg = null)
     {
-        $this->pub_rules['bool'] = [
-            'msg' => $msg,
-            'arg' => null
-        ];
+        $arg = [];
+        $rule = new Rule_Bool($arg, $msg);
+
+        $this->pub_rules['bool'] = $rule;
         return $this;
     }
 
@@ -100,15 +118,16 @@ class ValidateFunc
      */
     function decimal(?int $precision = null, $msg = null)
     {
-        $this->pub_rules['decimal'] = [
-            'msg' => $msg,
-            'arg' => $precision
-        ];
+        $arg = [$precision];
+        $rule = new Rule_Decimal($arg, $msg);
+
+        $this->pub_rules['decimal'] = $rule;
         return $this;
     }
 
     /**
      * 是否在某日期之前
+     * $val < $date
      *
      * @param Carbon $date
      * @param null $msg
@@ -116,100 +135,90 @@ class ValidateFunc
      */
     function dateBefore(Carbon $date, $msg = null)
     {
-        $this->pub_rules['dateBefore'] = [
-            'msg' => $msg,
-            'arg' => $date
-        ];
+        $arg = [$date];
+        $rule = new Rule_DateBefore($arg, $msg);
+
+        $this->pub_rules['dateBefore'] = $rule;
         return $this;
     }
 
     /**
      * 给定参数是否在某日期之后
+     * $val > $date
      *
-     * @param null|string $date
-     * @param null|string $msg
+     * @param Carbon|null $date
+     * @param null $msg
      * @return $this
      */
-    function dateAfter(?string $date = null, $msg = null)
+    function dateAfter(Carbon $date = null, $msg = null)
     {
-        $this->pub_rules['dateAfter'] = [
-            'msg' => $msg,
-            'arg' => $date
-        ];
+        $arg = [$date];
+        $rule = new Rule_DateAfter($arg, $msg);
+
+        $this->pub_rules['dateAfter'] = $rule;
         return $this;
     }
 
     /**
      * 验证值是否相等
+     *
      * @param $compare
      * @param null|string $msg
      * @return $this
      */
     function equal($compare, $msg = null)
     {
-        $this->pub_rules['equal'] = [
-            'msg' => $msg,
-            'arg' => $compare
-        ];
+        $arg = [$compare];
+        $rule = new Rule_Equal($arg, $msg);
+
+        $this->pub_rules['equal'] = $rule;
         return $this;
     }
 
     /**
      * 验证值是否一个浮点数
+     *
      * @param null|string $msg
      * @return $this
      */
     function float($msg = null)
     {
-        $this->pub_rules['float'] = [
-            'arg' => null,
-            'msg' => $msg
-        ];
+        $arg = [];
+        $rule = new Rule_Float($arg, $msg);
+
+        $this->pub_rules['float'] = $rule;
         return $this;
     }
 
     /**
      * 调用自定义的闭包验证
+     *
      * @param callable $func
      * @param null|string $msg
      * @return $this
      */
     function func(callable $func, $msg = null)
     {
-        $this->pub_rules['func'] = [
-            'arg' => $func,
-            'msg' => $msg
-        ];
+        $arg = [$func];
+        $rule = new Rule_Func($arg, $msg);
+
+        $this->pub_rules['func'] = $rule;
         return $this;
     }
 
-    /**
-     * 值是否在数组中
-     * @param array $array
-     * @param bool $isStrict
-     * @param null|string $msg
-     * @return $this
-     */
-    function inArray(array $array, $isStrict = false, $msg = null)
-    {
-        $this->pub_rules['inArray'] = [
-            'arg' => [$array, $isStrict],
-            'msg' => $msg
-        ];
-        return $this;
-    }
 
     /**
      * 是否一个整数值
+     *
      * @param null|string $msg
      * @return $this
      */
     function integer($msg = null)
     {
-        $this->pub_rules['integer'] = [
-            'arg' => null,
-            'msg' => $msg
-        ];
+        $arg = [];
+        $rule = new Rule_Integer($arg, $msg);
+
+        $this->pub_rules['integer'] = $rule;
         return $this;
     }
 
@@ -220,72 +229,42 @@ class ValidateFunc
      */
     function isIp($msg = null)
     {
-        $this->pub_rules['isIp'] = [
-            'arg' => null,
-            'msg' => $msg
-        ];
+        $arg = [];
+        $rule = new Rule_IP($arg, $msg);
+
+        $this->pub_rules['isIp'] = $rule;
         return $this;
     }
 
 
     /**
-     * 不在数组中
-     * @param array $array
-     * @param bool $isStrict
-     * @param null $msg
-     * @return $this
-     */
-    function notInArray(array $array, $isStrict = false, $msg = null)
-    {
-        $this->pub_rules['notInArray'] = [
-            'arg' => [$array, $isStrict],
-            'msg' => $msg
-        ];
-        return $this;
-    }
-
-    /**
-     * 验证数组或字符串的长度
-     * @param int $len
-     * @param null $msg
-     * @return $this
-     */
-    function length(int $len, $msg = null)
-    {
-        $this->pub_rules['length'] = [
-            'msg' => $msg,
-            'arg' => $len
-        ];
-        return $this;
-    }
-
-    /**
-     * 验证数组或字符串的长度是否超出
+     * 验证数组或字符串的长度 < $lengthMax
      * @param int $lengthMax
      * @param null $msg
      * @return $this
      */
-    function lengthMax(int $lengthMax, $msg = null)
+    function lenMax(int $lengthMax, $msg = null)
     {
-        $this->pub_rules['lengthMax'] = [
-            'msg' => $msg,
-            'arg' => $lengthMax
-        ];
+        $arg = [$lengthMax];
+        $rule = new Rule_LenMax($arg, $msg);
+
+        $this->pub_rules['lengthMax'] = $rule;
         return $this;
     }
 
     /**
-     * 验证数组或字符串的长度是否达到
+     * 验证数组或字符串的长度 > $lengthMin
+     *
      * @param int $lengthMin
      * @param null $msg
      * @return $this
      */
-    function lengthMin(int $lengthMin, $msg = null)
+    function lenMin(int $lengthMin, $msg = null)
     {
-        $this->pub_rules['lengthMin'] = [
-            'msg' => $msg,
-            'arg' => $lengthMin
-        ];
+        $arg = [$lengthMin];
+        $rule = new Rule_LenMin($arg, $msg);
+
+        $this->pub_rules['lengthMin'] = $rule;
         return $this;
     }
 
@@ -296,20 +275,17 @@ class ValidateFunc
      * @param null $msg
      * @return $this
      */
-    function betweenLen(int $min, int $max, $msg = null)
+    function lenBetween(int $min, int $max, $msg = null)
     {
-        $this->pub_rules['betweenLen'] = [
-            'msg' => $msg,
-            'arg' => [
-                $min,
-                $max
-            ]
-        ];
+        $arg = [$min, $max];
+        $rule = new Rule_LenBetween($arg, $msg);
+
+        $this->pub_rules['lenBetween'] = $rule;
         return $this;
     }
 
     /**
-     * 验证值不大于(相等视为不通过)
+     * 验证值 > $max
      *
      * @param int $max
      * @param null|string $msg
@@ -318,7 +294,7 @@ class ValidateFunc
     function max(int $max, ?string $msg = null)
     {
         $arg = [$max];
-        $rule = new RuleMax($arg, $msg);
+        $rule = new Rule_Max($arg, $msg);
 
         $this->pub_rules['max'] = $rule;
 
@@ -326,33 +302,17 @@ class ValidateFunc
     }
 
     /**
-     * 验证值不小于(相等视为不通过)
+     * 验证值 < $min
      * @param int $min
      * @param null|string $msg
      * @return $this
      */
     function min(int $min, ?string $msg = null)
     {
-        $this->pub_rules['min'] = [
-            'arg' => $min,
-            'msg' => $msg
-        ];
-        return $this;
-    }
+        $arg = [$min];
+        $rule = new Rule_Min($arg, $msg);
 
-    /**
-     * 验证值是合法的金额
-     * 100 | 100.1 | 100.01
-     * @param integer|null $precision 小数点位数
-     * @param string|null $msg
-     * @return $this
-     */
-    function money(?int $precision = null, string $msg = null)
-    {
-        $this->pub_rules['money'] = [
-            'arg' => $precision,
-            'msg' => $msg
-        ];
+        $this->pub_rules['min'] = $rule;
         return $this;
     }
 
@@ -365,10 +325,10 @@ class ValidateFunc
      */
     function regex($reg, $msg = null)
     {
-        $this->pub_rules['regex'] = [
-            'arg' => $reg,
-            'msg' => $msg
-        ];
+        $arg = [$reg];
+        $rule = new Rule_Regex($arg, $msg);
+
+        $this->pub_rules['regex'] = $rule;
         return $this;
     }
 
@@ -379,10 +339,10 @@ class ValidateFunc
      */
     function required($msg = null)
     {
-        $this->pub_rules['required'] = [
-            'arg' => null,
-            'msg' => $msg
-        ];
+        $arg = [];
+        $rule = new Rule_Required($arg, $msg);
+
+        $this->pub_rules['required'] = $rule;
         return $this;
     }
 
@@ -394,10 +354,10 @@ class ValidateFunc
      */
     function url($msg = null)
     {
-        $this->pub_rules['url'] = [
-            'arg' => null,
-            'msg' => $msg
-        ];
+        $arg = [];
+        $rule = new Rule_Url($arg, $msg);
+
+        $this->pub_rules['url'] = $rule;
         return $this;
     }
 }
