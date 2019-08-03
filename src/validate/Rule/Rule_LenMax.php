@@ -12,14 +12,14 @@ class Rule_LenMax extends RuleBase
         $is_pass = false;
         $max = $this->getArgs(0);
 
-        if (!is_numeric($val) || is_string($val))
+        if (is_string($val))
         {
             if (strlen($val) < $max)
             {
                 $is_pass = true;
             }
         }
-        else if (!is_array($val))
+        else if (is_array($val))
         {
             if (count($val) < $max)
             {

@@ -2,29 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c701b4c4-1c67-4e1f-832e-3401fa8f8d20" name="默认" comment="">
-      <change afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_IP.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_Integer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_LenBetween.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_LenMax.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_LenMin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_Min.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_Regex.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_Required.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_Url.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperStr.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperStr.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validate/Error.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/validate/Rule/RuleBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate/Rule/RuleBase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validate/Rule/Rule_Alpha.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_Alpha.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validate/Rule/Rule_AlphaNumLine.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_AlphaNumLine.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validate/Rule/Rule_Between.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_Between.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validate/Rule/Rule_Bool.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_Bool.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validate/Rule/Rule_DateAfter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_DateAfter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validate/Rule/Rule_DateBefore.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_DateBefore.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validate/Rule/Rule_Decimal.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_Decimal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validate/Rule/Rule_Equal.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_Equal.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validate/Rule/Rule_Float.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_Float.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validate/Rule/Rule_Func.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_Func.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validate/Rule/Rule_Max.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_Max.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validate/Rule/Rule_Bool.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validate/Rule/Rule_Float.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_IsJson.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validate/Rule/Rule_IP.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_IsIP.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validate/Rule/Rule_LenMax.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_LenMax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validate/Rule/Rule_LenMin.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate/Rule/Rule_LenMin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/validate/Validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate/Validate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/validate/ValidateFunc.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate/ValidateFunc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/validate/test_validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/validate/test_validate.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,12 +75,12 @@
     <session id="3651211">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.7" value="3" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -100,7 +89,7 @@
           <entry key="json" value="9" />
           <entry key="lock" value="1" />
           <entry key="md" value="1" />
-          <entry key="php" value="158" />
+          <entry key="php" value="192" />
           <entry key="phpunit" value="1" />
           <entry key="xml" value="1" />
         </counts>
@@ -109,23 +98,23 @@
         <counts>
           <entry key="JSON" value="10" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="159" />
+          <entry key="PHP" value="193" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="44" />
+          <entry key="dummy" value="46" />
           <entry key="json" value="29" />
-          <entry key="php" value="5142" />
+          <entry key="php" value="6986" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="29" />
-          <entry key="PHP" value="5142" />
-          <entry key="PLAIN_TEXT" value="44" />
+          <entry key="PHP" value="6986" />
+          <entry key="PLAIN_TEXT" value="46" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -136,53 +125,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/validate/Validate.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1168">
-              <caret line="73" column="47" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
-              <folding>
-                <element signature="e#40#57#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/validate/ValidateFunc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="359" column="39" selection-start-line="359" selection-start-column="39" selection-end-line="359" selection-end-column="39" />
-              <folding>
-                <element signature="e#39#57#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_DateAfter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="20" />
-              <folding>
-                <element signature="e#45#63#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_AlphaNumLine.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="13" column="62" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -199,6 +142,7 @@
       <find>rulemax</find>
       <find>namespace XWX\Common\validate\Rule;</find>
       <find>max</find>
+      <find>var_d</find>
     </findStrings>
     <replaceStrings>
       <replace>$this</replace>
@@ -212,8 +156,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Validate/Rule.php" />
-        <option value="$PROJECT_DIR$/src/Validate/Validate.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule.php" />
         <option value="$PROJECT_DIR$/src/validate/Error.php" />
         <option value="$PROJECT_DIR$/src/xarray/XArrBase.php" />
@@ -223,7 +165,6 @@
         <option value="$PROJECT_DIR$/tests/XArray/test_XArray.php" />
         <option value="$PROJECT_DIR$/src/Traits/Helpers/TraitHelper.php" />
         <option value="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperArray.php" />
-        <option value="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperStr.php" />
         <option value="$PROJECT_DIR$/src/XArray/XArray.php" />
         <option value="$PROJECT_DIR$/src/XReturn.php" />
         <option value="$PROJECT_DIR$/tests/test_base.php" />
@@ -232,8 +173,6 @@
         <option value="$PROJECT_DIR$/src/Traits/TraitCommon.php" />
         <option value="$PROJECT_DIR$/tests/TestBase.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/RuleMax.php" />
-        <option value="$PROJECT_DIR$/src/validate/Validate.php" />
-        <option value="$PROJECT_DIR$/tests/validate/test_validate.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/RuleAlpha.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_AlphaNum.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_AlphaNumLine.php" />
@@ -241,7 +180,6 @@
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_Bool.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_DateBefore.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_DateAfter.php" />
-        <option value="$PROJECT_DIR$/src/validate/Rule/Rule_Decimal.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_Equal.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_IsDecimal.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_Float.php" />
@@ -253,16 +191,22 @@
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_LengthMin.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_Max.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_Min.php" />
-        <option value="$PROJECT_DIR$/src/validate/Rule/Rule_LenMin.php" />
-        <option value="$PROJECT_DIR$/src/validate/Rule/Rule_LenMax.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_Money.php" />
-        <option value="$PROJECT_DIR$/src/validate/Rule/Rule_Regex.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_Required.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_Url.php" />
-        <option value="$PROJECT_DIR$/src/validate/Rule/RuleBase.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_Alpha.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_LenBetween.php" />
+        <option value="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperStr.php" />
+        <option value="$PROJECT_DIR$/src/validate/Validate.php" />
+        <option value="$PROJECT_DIR$/src/validate/Rule/RuleBase.php" />
+        <option value="$PROJECT_DIR$/src/validate/Rule/Rule_IsIP.php" />
         <option value="$PROJECT_DIR$/src/validate/ValidateFunc.php" />
+        <option value="$PROJECT_DIR$/src/validate/Rule/Rule_IsJson.php" />
+        <option value="$PROJECT_DIR$/src/validate/Rule/Rule_LenMin.php" />
+        <option value="$PROJECT_DIR$/src/validate/Rule/Rule_LenMax.php" />
+        <option value="$PROJECT_DIR$/src/validate/Rule/Rule_Regex.php" />
+        <option value="$PROJECT_DIR$/tests/validate/test_validate.php" />
+        <option value="$PROJECT_DIR$/src/validate/Rule/Rule_Decimal.php" />
       </list>
     </option>
   </component>
@@ -324,7 +268,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="305" />
-    <option name="y" value="136" />
+    <option name="y" value="135" />
     <option name="width" value="1280" />
     <option name="height" value="730" />
   </component>
@@ -363,6 +307,27 @@
               <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="validate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="外部库" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="外部库" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+            </path>
+            <path>
+              <item name="common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="外部库" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -378,15 +343,15 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\_job\common\src\VCode\assets" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\_job\common\src\validate\Rule" />
       <recent name="D:\_job\common\src\Traits" />
       <recent name="D:\_job\common\src\Validate" />
       <recent name="D:\_job\common\src\VCode" />
       <recent name="H:\_job\common\src" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\_job\common\src\VCode\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -402,40 +367,40 @@
     </option>
   </component>
   <component name="RunManager" selected="PHPUnit.test_validate">
-    <configuration name="test_XArray" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\XArray\test_XArray" file="$PROJECT_DIR$/tests/XArray/test_XArray.php" scope="Class" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_base" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\test_base" file="$PROJECT_DIR$/tests/test_base.php" scope="Class" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test_base.test_xreturn" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\test_base" file="$PROJECT_DIR$/tests/test_base.php" method="test_xreturn" scope="Method" />
-      <method v="2" />
-    </configuration>
     <configuration name="test_validate" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\validate\test_validate" file="$PROJECT_DIR$/tests/validate/test_validate.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="test_vcode" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\test_vcode" file="$PROJECT_DIR$/tests/test_vcode.php" scope="Class" />
+    <configuration name="test_validate.test_required" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\validate\test_validate" file="$PROJECT_DIR$/tests/validate/test_validate.php" method="test_required" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_validate.test_url" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\validate\test_validate" file="$PROJECT_DIR$/tests/validate/test_validate.php" method="test_url" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_validate.test_validate" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\validate\test_validate" file="$PROJECT_DIR$/tests/validate/test_validate.php" method="test_validate" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_validate.test_validate_1020" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\validate\test_validate" file="$PROJECT_DIR$/tests/validate/test_validate.php" method="test_validate_1020" scope="Method" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="PHPUnit.test_XArray" />
-      <item itemvalue="PHPUnit.test_base" />
-      <item itemvalue="PHPUnit.test_vcode" />
-      <item itemvalue="PHPUnit.test_base.test_xreturn" />
+      <item itemvalue="PHPUnit.test_validate.test_required" />
+      <item itemvalue="PHPUnit.test_validate.test_url" />
       <item itemvalue="PHPUnit.test_validate" />
+      <item itemvalue="PHPUnit.test_validate.test_validate" />
+      <item itemvalue="PHPUnit.test_validate.test_validate_1020" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="PHPUnit.test_validate" />
-        <item itemvalue="PHPUnit.test_base.test_xreturn" />
-        <item itemvalue="PHPUnit.test_XArray" />
-        <item itemvalue="PHPUnit.test_vcode" />
-        <item itemvalue="PHPUnit.test_base" />
+        <item itemvalue="PHPUnit.test_validate.test_validate_1020" />
+        <item itemvalue="PHPUnit.test_validate.test_validate" />
+        <item itemvalue="PHPUnit.test_validate.test_url" />
+        <item itemvalue="PHPUnit.test_validate.test_required" />
       </list>
     </recent_temporary>
   </component>
@@ -459,43 +424,44 @@
       <workItem from="1564320604886" duration="6745000" />
       <workItem from="1564493434803" duration="8477000" />
       <workItem from="1564670079549" duration="3940000" />
+      <workItem from="1564831142634" duration="11225000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_validate - 2019.07.30 at 23h 07m 41s.xml">
+    <history-entry file="test_validate_test_required - 2019.08.03 at 23h 33m 55s.xml">
+      <configuration name="test_validate.test_required" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_validate_test_required - 2019.08.03 at 23h 34m 01s.xml">
+      <configuration name="test_validate.test_required" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_validate_test_required - 2019.08.03 at 23h 34m 09s.xml">
+      <configuration name="test_validate.test_required" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_validate_test_url - 2019.08.03 at 23h 35m 05s.xml">
+      <configuration name="test_validate.test_url" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_validate - 2019.08.03 at 23h 35m 19s.xml">
       <configuration name="test_validate" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_validate - 2019.07.30 at 23h 08m 24s.xml">
+    <history-entry file="test_validate - 2019.08.03 at 23h 35m 54s.xml">
       <configuration name="test_validate" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_validate - 2019.07.30 at 23h 08m 46s.xml">
+    <history-entry file="test_validate - 2019.08.03 at 23h 39m 15s.xml">
       <configuration name="test_validate" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_validate - 2019.07.30 at 23h 09m 13s.xml">
-      <configuration name="test_validate" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_validate_test_validate - 2019.08.03 at 23h 39m 38s.xml">
+      <configuration name="test_validate.test_validate" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_validate - 2019.07.30 at 23h 09m 49s.xml">
-      <configuration name="test_validate" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_validate_test_validate_1020 - 2019.08.03 at 23h 40m 54s.xml">
+      <configuration name="test_validate.test_validate_1020" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_validate - 2019.07.30 at 23h 10m 21s.xml">
-      <configuration name="test_validate" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_validate - 2019.07.30 at 23h 11m 01s.xml">
-      <configuration name="test_validate" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_validate - 2019.07.30 at 23h 11m 33s.xml">
-      <configuration name="test_validate" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_validate - 2019.07.30 at 23h 11m 47s.xml">
-      <configuration name="test_validate" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_validate - 2019.07.30 at 23h 11m 59s.xml">
+    <history-entry file="test_validate - 2019.08.03 at 23h 41m 04s.xml">
       <configuration name="test_validate" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53075000" />
+    <option name="totallyTimeSpent" value="64300000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -508,9 +474,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28753352" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29155496" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -538,10 +503,18 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/validate/test_validate.php</url>
+          <line>130</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/phive.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/phpunit">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16">
@@ -600,13 +573,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/XArray/test_XArray.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/WebClient/WebClient.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -632,13 +598,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
           <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Traits/Helpers/TraitHelperStr.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="144" column="5" lean-forward="true" selection-start-line="144" selection-start-column="5" selection-end-line="144" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -681,9 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-          <folding>
-            <element signature="e#31#73#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -694,58 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/TestBase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="26" column="23" lean-forward="true" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/validate/test_validate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Bool.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Equal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="62" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="62" />
-          <folding>
-            <element signature="e#45#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/filter/filter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="306" column="9" selection-start-line="306" selection-start-column="9" selection-end-line="306" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Integer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Min.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -753,54 +657,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_LenMax.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Decimal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="18" />
-          <folding>
-            <element signature="e#45#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Money.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Regex.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Required.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding>
-            <element signature="e#45#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_IP.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Money.php" />
     <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Url.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -815,34 +672,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Float.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Alpha.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
           <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_LenMin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validate/Rule/RuleBase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
-          <folding>
-            <element signature="e#45#62#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -856,26 +689,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_DateAfter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="20" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="20" />
-          <folding>
-            <element signature="e#45#63#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/validate/Validate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1168">
-          <caret line="73" column="47" selection-start-line="73" selection-start-column="47" selection-end-line="73" selection-end-column="47" />
-          <folding>
-            <element signature="e#40#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_LenBetween.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -883,27 +696,302 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_AlphaNumLine.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/XArray/test_XArray.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="38" column="16" lean-forward="true" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Traits/Helpers/TraitHelperStr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="165" column="9" selection-start-line="165" selection-start-column="9" selection-end-line="165" selection-end-column="9" />
+          <folding>
+            <element signature="e#73#165#0#PHP" />
+            <element signature="e#170#329#0#PHP" />
+            <element signature="e#232#302#0#PHP" />
+            <element signature="e#336#436#0#PHP" />
+            <element signature="e#441#628#0#PHP" />
+            <element signature="e#524#585#0#PHP" />
+            <element signature="e#634#727#0#PHP" />
+            <element signature="e#732#976#0#PHP" />
+            <element signature="e#788#872#0#PHP" />
+            <element signature="e#982#1079#0#PHP" />
+            <element signature="e#1084#1343#0#PHP" />
+            <element signature="e#1144#1230#0#PHP" />
+            <element signature="e#1240#1314#0#PHP" />
+            <element signature="e#1349#1425#0#PHP" />
+            <element signature="e#1430#1717#0#PHP" />
+            <element signature="e#1485#1546#0#PHP" />
+            <element signature="e#1555#1614#0#PHP" />
+            <element signature="e#1623#1688#0#PHP" />
+            <element signature="e#1723#1795#0#PHP" />
+            <element signature="e#1800#1899#0#PHP" />
+            <element signature="e#1906#1977#0#PHP" />
+            <element signature="e#2109#2181#0#PHP" />
+            <element signature="e#2186#2309#0#PHP" />
+            <element signature="e#2316#2525#0#PHP" />
+            <element signature="e#2530#3166#0#PHP" />
+            <element signature="e#2749#2811#0#PHP" />
+            <element signature="e#2842#3093#0#PHP" />
+            <element signature="e#2886#3083#0#PHP" />
+            <element signature="e#3004#3083#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/TestBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Between.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="283">
+          <caret line="24" column="12" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Bool.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_DateAfter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="20" />
+          <folding>
+            <element signature="e#45#63#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Equal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <element signature="e#45#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Float.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="69" selection-start-line="11" selection-start-column="69" selection-end-line="11" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="12" column="57" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Integer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/filter/filter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="306" column="9" selection-start-line="306" selection-start-column="9" selection-end-line="306" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_IsIP.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/validate/ValidateFunc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="359" column="39" selection-start-line="359" selection-start-column="39" selection-end-line="359" selection-end-column="39" />
+        <state relative-caret-position="235">
+          <caret line="221" column="32" lean-forward="true" selection-start-line="221" selection-start-column="32" selection-end-line="221" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_IsJson.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validate/Rule/RuleBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="69" column="37" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="37" />
           <folding>
-            <element signature="e#39#57#0#PHP" expanded="true" />
+            <element signature="e#45#62#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_AlphaNumLine.php">
+    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_LenMin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="13" column="62" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="62" />
+        <state relative-caret-position="320">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_LenMax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Required.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding>
+            <element signature="e#45#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validate/Validate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="79" column="34" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Decimal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="26" column="69" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
+          <folding>
+            <element signature="e#45#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Regex.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/validate/test_validate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="e#132#12181#0#PHP" />
+            <element signature="e#175#694#0#PHP" />
+            <element signature="e#399#514#0#PHP" />
+            <element signature="e#412#507#0#PHP" />
+            <element signature="e#700#1339#0#PHP" />
+            <element signature="e#1010#1159#0#PHP" />
+            <element signature="e#1023#1152#0#PHP" />
+            <element signature="e#1345#2013#0#PHP" />
+            <element signature="e#1412#1459#0#PHP" />
+            <element signature="e#1469#1517#0#PHP" />
+            <element signature="e#1527#1574#0#PHP" />
+            <element signature="e#1584#1631#0#PHP" />
+            <element signature="e#1647#1776#0#PHP" />
+            <element signature="e#1660#1769#0#PHP" />
+            <element signature="e#2019#2671#0#PHP" />
+            <element signature="e#2088#2160#0#PHP" />
+            <element signature="e#2170#2251#0#PHP" />
+            <element signature="e#2261#2333#0#PHP" />
+            <element signature="e#2349#2491#0#PHP" />
+            <element signature="e#2362#2484#0#PHP" />
+            <element signature="e#2677#3336#0#PHP" />
+            <element signature="e#2747#2820#0#PHP" />
+            <element signature="e#2830#2912#0#PHP" />
+            <element signature="e#2922#2995#0#PHP" />
+            <element signature="e#3011#3153#0#PHP" />
+            <element signature="e#3024#3146#0#PHP" />
+            <element signature="e#3342#4291#0#PHP" />
+            <element signature="e#3788#4008#0#PHP" />
+            <element signature="e#3801#4001#0#PHP" />
+            <element signature="e#4297#4883#0#PHP" />
+            <element signature="e#4362#4408#0#PHP" />
+            <element signature="e#4418#4462#0#PHP" />
+            <element signature="e#4472#4519#0#PHP" />
+            <element signature="e#4535#4646#0#PHP" />
+            <element signature="e#4548#4639#0#PHP" />
+            <element signature="e#4889#5479#0#PHP" />
+            <element signature="e#4953#5074#0#PHP" />
+            <element signature="e#4992#5073#2#PHP" />
+            <element signature="e#5084#5193#0#PHP" />
+            <element signature="e#5123#5192#2#PHP" />
+            <element signature="e#5209#5297#0#PHP" />
+            <element signature="e#5222#5290#0#PHP" />
+            <element signature="e#5485#6012#0#PHP" />
+            <element signature="e#5717#5832#0#PHP" />
+            <element signature="e#5730#5825#0#PHP" />
+            <element signature="e#6018#6542#0#PHP" />
+            <element signature="e#6238#6362#0#PHP" />
+            <element signature="e#6251#6355#0#PHP" />
+            <element signature="e#6548#7460#0#PHP" />
+            <element signature="e#6880#7106#0#PHP" />
+            <element signature="e#6893#7099#0#PHP" />
+            <element signature="e#7466#8014#0#PHP" />
+            <element signature="e#7536#7586#0#PHP" />
+            <element signature="e#7596#7646#0#PHP" />
+            <element signature="e#7656#7706#0#PHP" />
+            <element signature="e#7722#7834#0#PHP" />
+            <element signature="e#7735#7827#0#PHP" />
+            <element signature="e#8020#8603#0#PHP" />
+            <element signature="e#8251#8363#0#PHP" />
+            <element signature="e#8264#8356#0#PHP" />
+            <element signature="e#8609#9195#0#PHP" />
+            <element signature="e#8840#8952#0#PHP" />
+            <element signature="e#8853#8945#0#PHP" />
+            <element signature="e#9201#9760#0#PHP" />
+            <element signature="e#9420#9520#0#PHP" />
+            <element signature="e#9433#9513#0#PHP" />
+            <element signature="e#9766#10325#0#PHP" />
+            <element signature="e#9985#10085#0#PHP" />
+            <element signature="e#9998#10078#0#PHP" />
+            <element signature="e#10331#10862#0#PHP" />
+            <element signature="e#10359#10389#0#PHP" />
+            <element signature="e#10868#11590#0#PHP" />
+            <element signature="e#11158#11290#0#PHP" />
+            <element signature="e#11171#11283#0#PHP" />
+            <element signature="e#11596#12179#0#PHP" />
+            <element signature="e#11812#11939#0#PHP" />
+            <element signature="e#11825#11932#0#PHP" />
+            <element signature="e#12186#12212#0#PHP" />
+            <element signature="e#12254#12329#0#PHP" />
+            <element signature="e#12360#12436#0#PHP" />
+            <element signature="e#12317#12444#0#PHP" />
+            <element signature="e#12330#12437#0#PHP" />
+            <element signature="e#12855#13514#0#PHP" />
+            <element signature="e#12928#13004#0#PHP" />
+            <element signature="e#13034#13110#0#PHP" />
+            <element signature="e#13253#13348#0#PHP" />
+            <element signature="e#13266#13341#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>

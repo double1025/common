@@ -12,16 +12,16 @@ class Rule_LenMin extends RuleBase
         $is_pass = false;
         $min = $this->getArgs(0);
 
-        if (!is_numeric($val) || is_string($val))
+        if (is_string($val))
         {
-            if (strlen($val) < $min)
+            if (strlen($val) > $min)
             {
                 $is_pass = true;
             }
         }
         else if (!is_array($val))
         {
-            if (count($val) < $min)
+            if (count($val) > $min)
             {
                 $is_pass = true;
             }

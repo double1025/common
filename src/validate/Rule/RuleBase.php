@@ -13,7 +13,30 @@ abstract class RuleBase
 
     private $pub_args;
     private $pub_err_msg;
-
+    private $pub_err_msg___default = [
+        'alpha' => ':fieldName只能是字母',
+        'alphanumline' => ':fieldName只能是字母数字下划线',
+        'between' => ':fieldName只能在 :arg0 - :arg1 之间',
+        'bool' => ':fieldName只能是布尔值',
+        'decimal' => ':fieldName只能是小数',
+        'datebefore' => ':fieldName必须在日期 :arg0 之前',
+        'dateafter' => ':fieldName必须在日期 :arg0 之后',
+        'equal' => ':fieldName必须等于:arg0',
+        'float' => ':fieldName只能是浮点数',
+        'func' => ':fieldName自定义验证失败',
+        'integer' => ':fieldName只能是整数',
+        'isip' => ':fieldName不是有效的IP地址',
+        'isjson' => ':fieldName不是有效的json格式',
+        'lenmax' => ':fieldName长度不能超过:arg0',
+        'lenmin' => ':fieldName长度不能小于:arg0',
+        'lenbetween' => ':fieldName的长度只能在 :arg0 - :arg1 之间',
+        'money' => ':fieldName必须是合法的金额',
+        'max' => ':fieldName的值不能大于:arg0',
+        'min' => ':fieldName的值不能小于:arg0',
+        'regex' => ':fieldName不符合指定规则',
+        'required' => ':fieldName必须填写',
+        'url' => ':fieldName必须是合法的网址',
+    ];
 
     public function __construct(array & $args, $msg = null)
     {
@@ -44,7 +67,26 @@ abstract class RuleBase
      */
     public function getErrMsg(): string
     {
-        return $this->pub_err_msg;
+        $err_msg = $this->pub_err_msg;
+        if (H::funcStrIsNullOrEmpty($err_msg))
+        {
+            $class_name = get_class($this);
+            $key = explode('_', $class_name)[1];
+            $key = H::funcStrToLower($key);
+
+            $err_msg = H::funcArrayGet($this->pub_err_msg___default, $key);
+        }
+
+        //替换arg0,arg1等参数
+        foreach ($this->getArgs() as $key => $arg)
+        {
+            if (is_string($arg))
+            {
+                $err_msg = str_replace(":arg{$key}", $arg, $err_msg);
+            }
+        }
+
+        return $err_msg;
     }
 
 
@@ -52,7 +94,7 @@ abstract class RuleBase
      * 验证
      *
      * @param $val
-     * @return mixed
+     * @return XReturn
      */
     abstract public function funcValidate($val): XReturn;
 }

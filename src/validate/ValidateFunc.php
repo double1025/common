@@ -15,6 +15,8 @@ use XWX\Common\Validate\Rule\Rule_Float;
 use XWX\Common\Validate\Rule\Rule_Func;
 use XWX\Common\Validate\Rule\Rule_Integer;
 use XWX\Common\Validate\Rule\Rule_IP;
+use XWX\Common\Validate\Rule\Rule_IsIP;
+use XWX\Common\Validate\Rule\Rule_IsJson;
 use XWX\Common\Validate\Rule\Rule_LenBetween;
 use XWX\Common\Validate\Rule\Rule_LenMax;
 use XWX\Common\Validate\Rule\Rule_LenMin;
@@ -23,6 +25,7 @@ use XWX\Common\Validate\Rule\Rule_Min;
 use XWX\Common\Validate\Rule\Rule_Regex;
 use XWX\Common\Validate\Rule\Rule_Required;
 use XWX\Common\Validate\Rule\Rule_Url;
+use XWX\Common\Validate\Rule\RuleBase;
 
 /**
  * 校验方法
@@ -39,7 +42,7 @@ class ValidateFunc
      *
      * @return RuleBase[]
      */
-    function getRules(): array
+    function getRules()
     {
         return $this->pub_rules;
     }
@@ -80,8 +83,8 @@ class ValidateFunc
     /**
      * 给定的参数是否在 $min $max 之间
      *
-     * @param integer $min 最小值 不包含该值
-     * @param integer $max 最大值 不包含该值
+     * @param integer $min 最小值
+     * @param integer $max 最大值
      * @param null|string $msg
      * @return $this
      */
@@ -94,20 +97,6 @@ class ValidateFunc
         return $this;
     }
 
-    /**
-     * 给定参数是否为布尔值
-     *
-     * @param null|string $msg
-     * @return $this
-     */
-    function bool($msg = null)
-    {
-        $arg = [];
-        $rule = new Rule_Bool($arg, $msg);
-
-        $this->pub_rules['bool'] = $rule;
-        return $this;
-    }
 
     /**
      * 是否为小数格式
@@ -175,20 +164,6 @@ class ValidateFunc
         return $this;
     }
 
-    /**
-     * 验证值是否一个浮点数
-     *
-     * @param null|string $msg
-     * @return $this
-     */
-    function float($msg = null)
-    {
-        $arg = [];
-        $rule = new Rule_Float($arg, $msg);
-
-        $this->pub_rules['float'] = $rule;
-        return $this;
-    }
 
     /**
      * 调用自定义的闭包验证
@@ -230,7 +205,21 @@ class ValidateFunc
     function isIp($msg = null)
     {
         $arg = [];
-        $rule = new Rule_IP($arg, $msg);
+        $rule = new Rule_IsIP($arg, $msg);
+
+        $this->pub_rules['isIp'] = $rule;
+        return $this;
+    }
+
+    /**
+     * 有效的JSON格式
+     * @param null $msg
+     * @return $this
+     */
+    function isJson($msg = null)
+    {
+        $arg = [];
+        $rule = new Rule_IsJson($arg, $msg);
 
         $this->pub_rules['isIp'] = $rule;
         return $this;

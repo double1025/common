@@ -146,6 +146,41 @@ trait TraitHelperStr
 
 
     /**
+     * 变大写
+     *
+     * @param $s
+     * @return string
+     */
+    static function funcStrToUpper($s)
+    {
+        $str = $s;
+        if (is_string($str))
+        {
+            $str = strtoupper($s);
+        }
+
+        return $str;
+    }
+
+    /**
+     * 变小写
+     *
+     * @param $s
+     * @return string
+     */
+    static function funcStrToLower($s)
+    {
+        $str = $s;
+        if (is_string($str))
+        {
+            $str = strtolower($s);
+        }
+
+        return $str;
+    }
+
+
+    /**
      * 数组转key=val
      *
      * @param $arr

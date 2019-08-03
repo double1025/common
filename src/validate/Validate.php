@@ -75,7 +75,10 @@ class Validate
                 if ($r->err())
                 {
                     $is_pass = false;
-                    $errors[] = $r;
+
+                    $r->errmsg = str_replace(':fieldName', $key, $r->errmsg);
+                    $errors[$key] = $r;
+
                     break;
                 }
             }

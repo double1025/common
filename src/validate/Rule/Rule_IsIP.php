@@ -5,7 +5,7 @@ namespace XWX\Common\Validate\Rule;
 
 use XWX\Common\XReturn;
 
-class Rule_IP extends RuleBase
+class Rule_IsIP extends RuleBase
 {
     public function funcValidate($val): XReturn
     {
