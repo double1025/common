@@ -7,7 +7,7 @@
 - 常用方法
 
 ## Validate
-```
+```php
 $v = new Validate();
 $v->addColumn('t1')
     ->required()
@@ -25,7 +25,7 @@ $r = $v->validate([
 ```
 
 ## XArray
-```
+```php
 $xarr = XArray::funcIns($arr);
 $this->funcCollect();
 

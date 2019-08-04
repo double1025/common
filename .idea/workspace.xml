@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c701b4c4-1c67-4e1f-832e-3401fa8f8d20" name="默认" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/xarray/test_memory.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/xarray/test_memory.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +80,7 @@
           <entry key="gitignore" value="1" />
           <entry key="json" value="11" />
           <entry key="lock" value="1" />
-          <entry key="md" value="2" />
+          <entry key="md" value="3" />
           <entry key="php" value="208" />
           <entry key="phpunit" value="1" />
           <entry key="xml" value="1" />
@@ -91,7 +89,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="12" />
-          <entry key="Markdown" value="2" />
+          <entry key="Markdown" value="3" />
           <entry key="PHP" value="209" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
@@ -125,8 +123,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/xarray/test_memory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="71" column="8" lean-forward="true" selection-start-line="71" selection-start-column="8" selection-end-line="87" selection-end-column="34" />
+            <state relative-caret-position="836">
+              <caret line="72" column="29" lean-forward="true" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -135,8 +133,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="352">
-                <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+              <first_editor relative-caret-position="432">
+                <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
               </first_editor>
               <second_editor />
             </state>
@@ -434,7 +432,7 @@
       <workItem from="1564902415410" duration="1493000" />
       <workItem from="1564927690218" duration="2071000" />
       <workItem from="1564929798272" duration="2851000" />
-      <workItem from="1564932895232" duration="798000" />
+      <workItem from="1564932895232" duration="1015000" />
     </task>
     <servers />
   </component>
@@ -471,7 +469,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71513000" />
+    <option name="totallyTimeSpent" value="71730000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -914,16 +912,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/xarray/test_memory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="71" column="8" lean-forward="true" selection-start-line="71" selection-start-column="8" selection-end-line="87" selection-end-column="34" />
+        <state relative-caret-position="836">
+          <caret line="72" column="29" lean-forward="true" selection-start-line="72" selection-start-column="29" selection-end-line="72" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="352">
-            <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+          <first_editor relative-caret-position="432">
+            <caret line="27" column="6" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
           </first_editor>
           <second_editor />
         </state>
