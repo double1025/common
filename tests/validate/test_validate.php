@@ -402,21 +402,22 @@ class test_validate extends TestBase
 
     function test_regex()
     {
-//        $v = new Validate();
-//        $v->addColumn('t1')
-//            ->regex("^(http://)?([^/]+)/i");
-//        $v->addColumn('t2')
-//            ->regex("^(http://)?([^/]+)/i");
-//
-//        $r = $v->validate([
-//            't1' => 'http://baidu.com',
-//            't2' => '123123',
-//        ], true);
-//
-//        $this->assertEquals(false, $r);
-//        //不能 $key
-//        $this->assertArrayNotHasKey('t1', $v->getErrors());
-//        $this->assertArrayHasKey('t2', $v->getErrors());
+        $v = new Validate();
+        $v->addColumn('t1')
+            ->regex('/bai/i');
+        $v->addColumn('t2')
+            ->regex('/^(http:\/\/)/i');
+
+        $r = $v->validate([
+            't1' => 'http://baidu.com',
+            't2' => '123123',
+        ], true);
+
+        $this->assertEquals(false, $r);
+        //不能 $key
+//        $this->funcLog($v->getErrors());
+        $this->assertArrayNotHasKey('t1', $v->getErrors());
+        $this->assertArrayHasKey('t2', $v->getErrors());
     }
 
     function test_required()

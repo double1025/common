@@ -14,7 +14,7 @@ class XArr2 extends XArray
         $arr_new = array();
         foreach ($arr as $key => $val)
         {
-            $val1 = H::funcIns()->funcArrayGet($val, $where_prop);
+            $val1 = H::funcArrayGet($val, $where_prop);
             $val2 = $where_val;
 
             $is_ok = false;
@@ -91,7 +91,7 @@ class XArr2 extends XArray
     public function toArr1()
     {
         $arr = $this->get();
-        
+
         $arr_new = [];
         foreach ($arr as $val)
         {

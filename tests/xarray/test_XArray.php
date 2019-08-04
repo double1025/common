@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\XArray;
+namespace Tests\xarray;
 
 use Tests\TestBase;
 use XWX\Common\XArray\XArray;
