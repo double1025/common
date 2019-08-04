@@ -84,8 +84,8 @@ class test_memory extends TestBase
         $this->funcCollect();
         $query->select(['a', 'd']);
         $this->funcCollect();
-//        $r = $query->get();
-//        $this->funcLog(count($r));
+        $r = $query->get();
+        $this->funcLog(count($r));
 
         $this->funcShow();
         $this->assertTrue(true);
