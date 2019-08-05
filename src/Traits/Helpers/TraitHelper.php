@@ -4,6 +4,7 @@ namespace XWX\Common\Traits\Helpers;
 
 
 use App\X\XContext;
+use Carbon\Carbon;
 
 trait TraitHelper
 {
@@ -41,13 +42,23 @@ trait TraitHelper
     }
 
 
+    /**
+     * 现在
+     *
+     * @return Carbon
+     */
     static function now()
     {
-        return \Carbon::now();
+        return Carbon::now();
     }
 
+    /**
+     * 今天
+     *
+     * @return Carbon
+     */
     static function today()
     {
-        return \Carbon::today();
+        return Carbon::today();
     }
 }

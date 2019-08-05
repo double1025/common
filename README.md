@@ -1,4 +1,8 @@
 # common
+## 安装
+```
+composer require xwx/common
+```
 ## 介绍
 帮忙插件，让开发更便捷
 - 数据验证组件-Validate
@@ -35,4 +39,12 @@ $r = $xarr->where('a', 1, '>')
     ->order('b', SORT_DESC)
     ->select(['a', 'd'])
     ->get();
+```
+
+## WebClient
+```php
+$url = 'https://www.baidu.com';
+$client = new WebClient($url);
+$res = $client->get()
+$return_string = $res->getBody();
 ```
