@@ -11,7 +11,7 @@ trait TraitIns
      * 只会new一次
      *
      * @param mixed ...$args
-     * @return TraitIns
+     * @return static
      */
     static function funcInsStatic(...$args)
     {
@@ -27,7 +27,7 @@ trait TraitIns
      * 每次调用都new
      *
      * @param mixed ...$args
-     * @return TraitIns
+     * @return static
      */
     static function funcIns(...$args)
     {
