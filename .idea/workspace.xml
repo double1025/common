@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c701b4c4-1c67-4e1f-832e-3401fa8f8d20" name="默认" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/test_common.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/XArray.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/XArray/XArr1.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/XArray/XArr1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/XArray/XArr2.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/XArray/XArr2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/XArray/XArray.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/XArray/XArray.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_base.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_base.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_vcode.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_vcode.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,11 +69,12 @@
           <entry key="project.open.time.0" value="5" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="5" />
           <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="22" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -88,8 +82,8 @@
           <entry key="gitignore" value="1" />
           <entry key="json" value="14" />
           <entry key="lock" value="1" />
-          <entry key="md" value="4" />
-          <entry key="php" value="254" />
+          <entry key="md" value="5" />
+          <entry key="php" value="255" />
           <entry key="phpunit" value="1" />
           <entry key="xml" value="1" />
         </counts>
@@ -97,8 +91,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JSON" value="15" />
-          <entry key="Markdown" value="4" />
-          <entry key="PHP" value="255" />
+          <entry key="Markdown" value="5" />
+          <entry key="PHP" value="256" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
         </counts>
@@ -107,15 +101,15 @@
         <counts>
           <entry key="dummy" value="51" />
           <entry key="json" value="31" />
-          <entry key="md" value="193" />
+          <entry key="md" value="284" />
           <entry key="php" value="12284" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="31" />
-          <entry key="Markdown" value="191" />
-          <entry key="PHP" value="12286" />
+          <entry key="Markdown" value="278" />
+          <entry key="PHP" value="12290" />
           <entry key="PLAIN_TEXT" value="51" />
         </counts>
       </usages-collector>
@@ -127,7 +121,29 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="112">
+                <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/test_vcode.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -201,7 +217,6 @@
         <option value="$PROJECT_DIR$/tests/xarray/test_memory.php" />
         <option value="$PROJECT_DIR$/src/Traits/Helpers/TraitHelper.php" />
         <option value="$PROJECT_DIR$/src/WebClient/WebClient.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Traits/TraitIns.php" />
         <option value="$PROJECT_DIR$/tests/test_base.php" />
         <option value="$PROJECT_DIR$/src/XArray/XArray.php" />
@@ -214,6 +229,7 @@
         <option value="$PROJECT_DIR$/tests/test_vcode.php" />
         <option value="$PROJECT_DIR$/src/XImage/XImage.php" />
         <option value="$PROJECT_DIR$/src/XImage/VCode.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -273,8 +289,8 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="128" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="127" />
     <option name="y" value="15" />
     <option name="width" value="1750" />
     <option name="height" value="970" />
@@ -284,7 +300,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -300,18 +315,13 @@
             <path>
               <item name="common" type="b2602c69:ProjectViewProjectNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="XImage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -421,6 +431,7 @@
       <workItem from="1566482002424" duration="3558000" />
       <workItem from="1566570558321" duration="5006000" />
       <workItem from="1566697103975" duration="8151000" />
+      <workItem from="1566711577723" duration="181000" />
     </task>
     <servers />
   </component>
@@ -457,7 +468,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103958000" />
+    <option name="totallyTimeSpent" value="104139000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -469,9 +480,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="103" y="12" width="1400" height="776" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16840537" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15348525" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -663,16 +675,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="237">
-            <caret line="23" selection-start-line="23" selection-end-line="23" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Traits/TraitIns.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
@@ -790,19 +792,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="583">
           <caret line="97" selection-start-line="97" selection-end-line="97" />
-          <folding>
-            <element signature="e#26#43#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/VCode/VerifyCodeConf.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="592">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VCode/VerifyCodeConf.php" />
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/gd/gd.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -817,20 +810,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_vcode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/VCode/VerifyCode.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="142" column="132" lean-forward="true" selection-start-line="142" selection-start-column="108" selection-end-line="142" selection-end-column="132" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/VCode/VerifyCode.php" />
     <entry file="file://$PROJECT_DIR$/src/XImage/XImage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="457">
@@ -842,6 +822,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="49" column="24" lean-forward="true" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_vcode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="112">
+            <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
