@@ -8,8 +8,6 @@ use XWX\Common\Traits\TraitIns;
 
 class XArray
 {
-    use TraitIns;
-
     private $pub_arr;
     private $pub_is_arr1 = 0;
 
@@ -191,6 +189,18 @@ class XArray
         array_multisort(array_column($arr, $where_prop), $sort, $arr);
 
         return $this->funcCall($arr);
+    }
+
+
+    /**
+     * 数组转字符串
+     *
+     * @param string $glue
+     * @return null
+     */
+    function implode($glue = ',')
+    {
+        return null;
     }
 
 

@@ -1,14 +1,9 @@
 <?php
+require_once '../vendor/autoload.php';
 
-namespace Tests;
+//$v = new \XWX\Common\VCode\VerifyCode();
+//$v->DrawCode('123');
 
-use XWX\Common\VCode\VerifyCode;
-
-class test_vcode extends TestBase
-{
-    function test_img()
-    {
-        $v = new VerifyCode();
-        $v->DrawCode();
-    }
-}
+$v = new \XWX\Common\XImage\VCode();
+//$v->funcCodeSave(rand(1000, 9999), 'D:/1.jpg');
+$v->funcCodeToPng(rand(1000, 9999));

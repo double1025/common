@@ -88,6 +88,25 @@ class XArr2 extends XArray
     }
 
 
+    public function implode($glue = ',')
+    {
+        $arr = $this->get();
+
+        $string1 = '';
+        foreach ($arr as $val)
+        {
+            foreach ($val as $val_2)
+            {
+                $string1 .= $glue . $val_2;
+            }
+        }
+
+        $string1 = substr($string1, 1, strlen($string1));
+
+
+        return $string1;
+    }
+
     public function toArr1()
     {
         $arr = $this->get();

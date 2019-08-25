@@ -47,4 +47,13 @@ class XArr1 extends XArray
 
         return $this->funcCall($arr_new);
     }
+
+
+    public function implode($glue = ',')
+    {
+        $arr = $this->get();
+        $string1 = implode($glue, $arr);
+
+        return $string1;
+    }
 }
