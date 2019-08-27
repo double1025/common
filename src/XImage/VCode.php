@@ -14,11 +14,13 @@ class VCode
     protected $pub_height;
 
     protected $pub_set_noise; //是否设置画干扰杂字符
+    protected $pub_set_font_size; //字体大小
 
 
-    public function __construct($set_noise = true)
+    public function __construct($font_size = 30, $set_noise = true)
     {
         $this->pub_set_noise = $set_noise;
+        $this->pub_set_font_size = $font_size;
     }
 
     /**
@@ -75,7 +77,7 @@ class VCode
         }
 
 
-        $font_size = 30;
+        $font_size = $this->pub_set_font_size;
 
         $code = strval($code);
         $code_len = strlen($code);
