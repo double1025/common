@@ -7,6 +7,12 @@ use XWX\Common\Traits\Helpers\TraitHelper;
 use XWX\Common\Traits\Helpers\TraitHelperArray;
 use XWX\Common\Traits\Helpers\TraitHelperStr;
 
+/**
+ * 帮助类
+ *
+ * Class H
+ * @package XWX\Common
+ */
 class H
 {
     use TraitHelper, TraitHelperStr, TraitHelperArray;
