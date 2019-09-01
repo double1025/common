@@ -54,13 +54,6 @@ class Validate
         $errors = [];
         foreach ($this->pub_columns as $key => $item)
         {
-            if (!array_key_exists($key, $data))
-            {
-                //key不存在 next
-                continue;
-            }
-
-
             /** @var ValidateFunc $v_func */
             $v_func = $item['v_func'];
             $rules = $v_func->getRules();
