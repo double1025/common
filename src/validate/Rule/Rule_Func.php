@@ -3,19 +3,23 @@
 namespace XWX\Common\Validate\Rule;
 
 
-use XWX\Common\H;
 use XWX\Common\XReturn;
 
 class Rule_Func extends RuleBase
 {
     public function funcValidate($val): XReturn
     {
-        $is_pass = call_user_func($this->getArgs(0), $val);
-        if (!$is_pass)
+        $r = call_user_func($this->getArgs(0), $val);
+        if ($r instanceof XReturn)
         {
-            return $this->funcGetR(-1016, $this->getErrMsg());
+            //pass
+        }
+        else
+        {
+            throw new \Exception('return type error');
         }
 
-        return $this->funcGetR(0);
+
+        return $r;
     }
 }

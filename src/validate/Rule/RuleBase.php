@@ -13,11 +13,10 @@ abstract class RuleBase
 
     private $pub_args;
     private $pub_err_msg;
-    private $pub_err_msg___default = [
+    private $pub_errs_msg__default = [
         'alpha' => ':fieldName只能是字母',
         'alphanumline' => ':fieldName只能是字母数字下划线',
         'between' => ':fieldName只能在 :arg0 - :arg1 之间',
-        'bool' => ':fieldName只能是布尔值',
         'decimal' => ':fieldName只能是小数',
         'datebefore' => ':fieldName必须在日期 :arg0 之前',
         'dateafter' => ':fieldName必须在日期 :arg0 之后',
@@ -34,7 +33,7 @@ abstract class RuleBase
         'max' => ':fieldName的值不能大于:arg0',
         'min' => ':fieldName的值不能小于:arg0',
         'regex' => ':fieldName不符合指定规则',
-        'required' => ':fieldName必须填写',
+        'required' => '必须填写',
         'url' => ':fieldName必须是合法的网址',
     ];
 
@@ -43,6 +42,7 @@ abstract class RuleBase
         $this->pub_args = $args;
         $this->pub_err_msg = $msg;
     }
+
 
     /**
      * 规则参数
@@ -74,7 +74,7 @@ abstract class RuleBase
             $key = explode('_', $class_name)[1];
             $key = H::funcStrToLower($key);
 
-            $err_msg = H::funcArrayGet($this->pub_err_msg___default, $key);
+            $err_msg = H::funcArrayGet($this->pub_errs_msg__default, $key);
         }
 
         //替换arg0,arg1等参数
@@ -87,6 +87,23 @@ abstract class RuleBase
         }
 
         return $err_msg;
+    }
+
+
+    /**
+     * 设置默认错误提示信息
+     *
+     * @param array $errs_msg
+     */
+    public function setErrsMsgDefault(array $errs_msg)
+    {
+        foreach ($errs_msg as $k => $v)
+        {
+            if (array_key_exists($k, $this->pub_errs_msg__default))
+            {
+                $this->pub_errs_msg__default[$k] = $v;
+            }
+        }
     }
 
 

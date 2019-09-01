@@ -3,6 +3,9 @@
 namespace Tests;
 
 
+use XWX\Common\XArray\XArray;
+use XWX\Common\XReturn;
+
 class test_common extends TestBase
 {
     function test_1010()
@@ -13,5 +16,14 @@ class test_common extends TestBase
 //        print __DIR__;
 
         $this->assertTrue(true);
+    }
+
+    function test_instanceof()
+    {
+        $r = new XReturn();
+        $this->assertTrue($r instanceof XReturn);
+
+        $r = new XArray();
+        $this->assertFalse($r instanceof XReturn);
     }
 }

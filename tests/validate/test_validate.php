@@ -7,6 +7,7 @@ use Carbon\Carbon;
 use function foo\func;
 use Tests\TestBase;
 use XWX\Common\Validate\Validate;
+use XWX\Common\XReturn;
 
 class test_validate extends TestBase
 {
@@ -192,12 +193,17 @@ class test_validate extends TestBase
         $v->addColumn('t1')
             ->func(function ($val)
             {
-                return $val == '123';
+                $r = new XReturn();
+                $r->setOK();
+
+                return $r;
             });
         $v->addColumn('t2')
             ->func(function ()
             {
-                return false;
+                $r = new XReturn();
+
+                return $r;
             });
 
         $r = $v->validate([
@@ -471,6 +477,52 @@ class test_validate extends TestBase
     }
 
 
+    //测试默认提示
+    function test_err_msg__default()
+    {
+        $errs_msg__default = [
+            'required' => '测试填写',
+            'integer' => '测试integer',
+        ];
+
+        $v = new Validate($errs_msg__default);
+        $v->addColumn('t1')
+            ->required();
+        $v->addColumn('t2')
+            ->required('你最帅');
+        $v->addColumn('t3')
+            ->integer();
+        $v->addColumn('t4')
+            ->func(function ($val)
+            {
+                $r = new XReturn();
+                if ($val == 1)
+                {
+                    $r->errmsg = 'OK';
+                }
+                else
+                {
+                    $r->errmsg = 'Err';
+                }
+
+                return $r;
+            });
+
+        $r = $v->validate([
+            't3' => 'http:',
+            't4' => 1,
+        ], true);
+
+        $this->funcLog($v->getErrors());
+
+        $this->assertEquals('测试填写', $v->getErrors()['t1']->errmsg);
+        $this->assertEquals('你最帅', $v->getErrors()['t2']->errmsg);
+        $this->assertEquals('测试integer', $v->getErrors()['t3']->errmsg);
+        $this->assertEquals('OK', $v->getErrors()['t4']->errmsg);
+    }
+
+
+    //综合测试
     function test_validate_1010()
     {
         $v = new Validate();

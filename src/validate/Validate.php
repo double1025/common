@@ -17,6 +17,18 @@ class Validate
 
     protected $pub_errors = [];
 
+    protected $pub_errors_msg__default = [];
+
+
+    /**
+     * Validate constructor.
+     * @param array $errs_msg__default 自定义默认错误
+     */
+    public function __construct($errs_msg__default = [])
+    {
+        $this->pub_errors_msg__default = $errs_msg__default;
+    }
+
 
     /**
      * @return XReturn[]
@@ -64,6 +76,12 @@ class Validate
             $is_pass = true;
             foreach ($rules as $rule_key => $rule)
             {
+                if (count($this->pub_errors_msg__default) > 0)
+                {
+                    //自定义默认错误提示
+                    $rule->setErrsMsgDefault($this->pub_errors_msg__default);
+                }
+
                 $r = $rule->funcValidate($val);
                 if ($r->err())
                 {

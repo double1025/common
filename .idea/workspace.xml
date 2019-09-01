@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c701b4c4-1c67-4e1f-832e-3401fa8f8d20" name="默认" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/validate/Validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/validate/Validate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_common.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_common.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/validate/test_validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/validate/test_validate.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +67,7 @@
       <usages-collector id="statistics.lifecycle.project">
         <counts>
           <entry key="project.closed" value="23" />
-          <entry key="project.open.time.0" value="5" />
+          <entry key="project.open.time.0" value="6" />
           <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
@@ -76,7 +76,7 @@
           <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="5" />
           <entry key="project.open.time.9" value="4" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -85,7 +85,7 @@
           <entry key="json" value="14" />
           <entry key="lock" value="1" />
           <entry key="md" value="5" />
-          <entry key="php" value="258" />
+          <entry key="php" value="266" />
           <entry key="phpunit" value="1" />
           <entry key="xml" value="1" />
         </counts>
@@ -94,25 +94,25 @@
         <counts>
           <entry key="JSON" value="15" />
           <entry key="Markdown" value="5" />
-          <entry key="PHP" value="259" />
+          <entry key="PHP" value="267" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="51" />
+          <entry key="dummy" value="52" />
           <entry key="json" value="31" />
           <entry key="md" value="284" />
-          <entry key="php" value="12362" />
+          <entry key="php" value="13278" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="31" />
           <entry key="Markdown" value="278" />
-          <entry key="PHP" value="12368" />
-          <entry key="PLAIN_TEXT" value="51" />
+          <entry key="PHP" value="13284" />
+          <entry key="PLAIN_TEXT" value="52" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -124,20 +124,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/XImage/VCode.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Validate/Validate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="19" column="59" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="59" />
+            <state relative-caret-position="624">
+              <caret line="78" column="45" lean-forward="true" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/validate/test_validate.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="558">
+              <caret line="516" column="8" selection-start-line="516" selection-start-column="8" selection-end-line="516" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/validate/test_validate.php">
+        <entry file="file://$PROJECT_DIR$/src/Validate/ValidateFunc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="482" column="31" lean-forward="true" selection-start-line="482" selection-start-column="31" selection-end-line="482" selection-end-column="31" />
+            <state relative-caret-position="217">
+              <caret line="328" column="13" selection-start-line="328" selection-start-column="13" selection-end-line="328" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Validate/Rule/RuleBase.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -165,6 +183,7 @@
       <find>backColor</find>
       <find>loadFonts</find>
       <find>imagesetpixel</find>
+      <find>stance</find>
     </findStrings>
     <replaceStrings>
       <replace>$this</replace>
@@ -178,8 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/validate/Rule/Rule_AlphaNumLine.php" />
-        <option value="$PROJECT_DIR$/src/validate/Rule/Rule_Between.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_Bool.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_DateBefore.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_DateAfter.php" />
@@ -222,13 +239,15 @@
         <option value="$PROJECT_DIR$/src/XImg/XImg.php" />
         <option value="$PROJECT_DIR$/src/XImage/XImg.php" />
         <option value="$PROJECT_DIR$/src/VCode/VerifyCode.php" />
-        <option value="$PROJECT_DIR$/tests/test_common.php" />
         <option value="$PROJECT_DIR$/tests/test_vcode.php" />
         <option value="$PROJECT_DIR$/src/XImage/XImage.php" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/XImage/VCode.php" />
-        <option value="$PROJECT_DIR$/tests/validate/test_validate.php" />
+        <option value="$PROJECT_DIR$/tests/test_common.php" />
+        <option value="$PROJECT_DIR$/src/Validate/Rule/Rule_Func.php" />
+        <option value="$PROJECT_DIR$/src/Validate/Rule/RuleBase.php" />
         <option value="$PROJECT_DIR$/src/Validate/Validate.php" />
+        <option value="$PROJECT_DIR$/tests/validate/test_validate.php" />
       </list>
     </option>
   </component>
@@ -288,9 +307,9 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="125" />
-    <option name="y" value="15" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="106" />
+    <option name="y" value="35" />
     <option name="width" value="1750" />
     <option name="height" value="970" />
   </component>
@@ -310,6 +329,19 @@
               <item name="common" type="b2602c69:ProjectViewProjectNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Validate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Validate" type="462c0819:PsiDirectoryNode" />
+              <item name="Rule" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="common" type="b2602c69:ProjectViewProjectNode" />
@@ -366,44 +398,45 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.test_validate">
+  <component name="RunManager" selected="PHPUnit.test_validate.test_err_msg__default">
     <configuration name="test_common.test_1010" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\test_common" file="$PROJECT_DIR$/tests/test_common.php" method="test_1010" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_common.test_1020" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\test_common" file="$PROJECT_DIR$/tests/test_common.php" method="test_1020" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="test_validate" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\validate\test_validate" file="$PROJECT_DIR$/tests/validate/test_validate.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="test_validate.test_validate_1010" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\validate\test_validate" file="$PROJECT_DIR$/tests/validate/test_validate.php" method="test_validate_1010" scope="Method" />
+    <configuration name="test_validate.test_err_msg__default" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\validate\test_validate" file="$PROJECT_DIR$/tests/validate/test_validate.php" method="test_err_msg__default" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="test_vcode.test_img" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\test_vcode" file="$PROJECT_DIR$/tests/test_vcode.php" method="test_img" scope="Method" />
+    <configuration name="test_validate.test_func" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\validate\test_validate" file="$PROJECT_DIR$/tests/validate/test_validate.php" method="test_func" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="PHP-TEST" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$/tests" host="127.0.0.1" port="168">
       <method v="2" />
     </configuration>
-    <configuration name="test_vcode.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/tests/test_vcode.php">
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="PHP Built-in Web Server.PHP-TEST" />
-      <item itemvalue="PHP Script.test_vcode.php" />
-      <item itemvalue="PHPUnit.test_vcode.test_img" />
       <item itemvalue="PHPUnit.test_common.test_1010" />
       <item itemvalue="PHPUnit.test_validate" />
-      <item itemvalue="PHPUnit.test_validate.test_validate_1010" />
+      <item itemvalue="PHPUnit.test_common.test_1020" />
+      <item itemvalue="PHPUnit.test_validate.test_func" />
+      <item itemvalue="PHPUnit.test_validate.test_err_msg__default" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.test_validate.test_err_msg__default" />
         <item itemvalue="PHPUnit.test_validate" />
-        <item itemvalue="PHPUnit.test_validate.test_validate_1010" />
+        <item itemvalue="PHPUnit.test_validate.test_func" />
         <item itemvalue="PHPUnit.test_common.test_1010" />
-        <item itemvalue="PHP Script.test_vcode.php" />
-        <item itemvalue="PHPUnit.test_vcode.test_img" />
+        <item itemvalue="PHPUnit.test_common.test_1020" />
       </list>
     </recent_temporary>
   </component>
@@ -445,43 +478,44 @@
       <workItem from="1566711577723" duration="181000" />
       <workItem from="1566914258780" duration="192000" />
       <workItem from="1567341762497" duration="114000" />
+      <workItem from="1567346153391" duration="2507000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_common_test_1010 - 2019.08.25 at 10h 07m 46s.xml">
-      <configuration name="test_common.test_1010" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_validate_test_err_msg__default - 2019.09.01 at 22h 23m 07s.xml">
+      <configuration name="test_validate.test_err_msg__default" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_common_test_1010 - 2019.08.25 at 10h 08m 10s.xml">
-      <configuration name="test_common.test_1010" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_validate_test_err_msg__default - 2019.09.01 at 22h 23m 23s.xml">
+      <configuration name="test_validate.test_err_msg__default" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_common_test_1010 - 2019.08.25 at 12h 32m 46s.xml">
-      <configuration name="test_common.test_1010" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_validate_test_err_msg__default - 2019.09.01 at 22h 24m 00s.xml">
+      <configuration name="test_validate.test_err_msg__default" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_common_test_1010 - 2019.08.25 at 12h 32m 52s.xml">
-      <configuration name="test_common.test_1010" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_validate_test_err_msg__default - 2019.09.01 at 22h 24m 07s.xml">
+      <configuration name="test_validate.test_err_msg__default" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_common_test_1010 - 2019.08.25 at 13h 03m 31s.xml">
-      <configuration name="test_common.test_1010" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_validate_test_err_msg__default - 2019.09.01 at 22h 25m 11s.xml">
+      <configuration name="test_validate.test_err_msg__default" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_validate - 2019.09.01 at 20h 42m 53s.xml">
-      <configuration name="test_validate" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_validate_test_err_msg__default - 2019.09.01 at 22h 25m 27s.xml">
+      <configuration name="test_validate.test_err_msg__default" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_validate_test_validate_1010 - 2019.09.01 at 20h 43m 20s.xml">
-      <configuration name="test_validate.test_validate_1010" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_validate_test_err_msg__default - 2019.09.01 at 22h 32m 58s.xml">
+      <configuration name="test_validate.test_err_msg__default" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_validate_test_validate_1010 - 2019.09.01 at 20h 43m 40s.xml">
-      <configuration name="test_validate.test_validate_1010" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_validate_test_err_msg__default - 2019.09.01 at 22h 36m 47s.xml">
+      <configuration name="test_validate.test_err_msg__default" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_validate_test_validate_1010 - 2019.09.01 at 20h 43m 49s.xml">
-      <configuration name="test_validate.test_validate_1010" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_validate_test_err_msg__default - 2019.09.01 at 22h 37m 13s.xml">
+      <configuration name="test_validate.test_err_msg__default" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_validate - 2019.09.01 at 20h 44m 05s.xml">
-      <configuration name="test_validate" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_validate_test_err_msg__default - 2019.09.01 at 22h 37m 33s.xml">
+      <configuration name="test_validate.test_err_msg__default" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104445000" />
+    <option name="totallyTimeSpent" value="106952000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -496,12 +530,12 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1575067" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22184986" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34844193" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42917848" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -553,13 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/TestBase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Validate/Rule/Rule_Between.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
@@ -583,13 +610,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/validate/Rule/Rule_Float.php" />
-    <entry file="file://$PROJECT_DIR$/src/Validate/Rule/Rule_Func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="12" column="57" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Validate/Rule/Rule_Integer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -608,13 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Validate/ValidateFunc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="221" column="32" lean-forward="true" selection-start-line="221" selection-start-column="32" selection-end-line="221" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -650,13 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="26" column="69" selection-start-line="26" selection-start-column="69" selection-end-line="26" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Validate/Rule/RuleBase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -802,13 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/VCode/VerifyCode.php" />
     <entry file="file://$PROJECT_DIR$/src/XImage/XImage.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -834,17 +833,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Validate/Validate.php">
+    <entry file="file://$PROJECT_DIR$/tests/test_common.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+        <state relative-caret-position="279">
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="39" />
+          <folding>
+            <element signature="e#26#55#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/validate/test_validate.php">
+    <entry file="file://$PROJECT_DIR$/src/Validate/Rule/Rule_Func.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="482" column="31" lean-forward="true" selection-start-line="482" selection-start-column="31" selection-end-line="482" selection-end-column="31" />
+        <state relative-caret-position="288">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -852,6 +854,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="19" column="59" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/TestBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Validate/Rule/RuleBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="98" column="5" lean-forward="true" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Validate/ValidateFunc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="328" column="13" selection-start-line="328" selection-start-column="13" selection-end-line="328" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Validate/Validate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="78" column="45" lean-forward="true" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/validate/test_validate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="516" column="8" selection-start-line="516" selection-start-column="8" selection-end-line="516" selection-end-column="8" />
         </state>
       </provider>
     </entry>
