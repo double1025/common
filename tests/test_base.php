@@ -82,6 +82,25 @@ class test_base extends TestBase
     }
 
 
+    function test_class()
+    {
+        $class_name = sprintf('App\Common\WX\App\%s\%s', 'aaa','bbb');
+        var_dump($class_name);
+
+        var_dump(XReturn::class);
+
+        $class_name = 'XWX\Common\XReturn';
+        if (class_exists($class_name))
+        {
+//            $reflect_class = new \ReflectionClass($class_name);
+//            $app = $reflect_class->newInstance();
+            $app = new $class_name();
+            $app->setOK();
+
+            var_dump($app);
+        }
+    }
+
     function test_mongodb()
     {
 //        var_dump(extension_loaded("mongodb"));
