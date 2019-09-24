@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c701b4c4-1c67-4e1f-832e-3401fa8f8d20" name="默认" comment="">
-      <change afterPath="$PROJECT_DIR$/src/XEntity.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_xentity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperArray.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperArray.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebClient/WebClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebClient/WebClient.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/XArray/XArray.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/XArray/XArray.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/TestBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TestBase.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +81,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="json" value="17" />
+          <entry key="json" value="18" />
           <entry key="lock" value="1" />
           <entry key="md" value="5" />
           <entry key="php" value="292" />
@@ -97,7 +91,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="18" />
+          <entry key="JSON" value="19" />
           <entry key="Markdown" value="5" />
           <entry key="PHP" value="293" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -107,14 +101,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="53" />
-          <entry key="json" value="31" />
+          <entry key="json" value="32" />
           <entry key="md" value="284" />
           <entry key="php" value="15188" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="31" />
+          <entry key="JSON" value="32" />
           <entry key="Markdown" value="278" />
           <entry key="PHP" value="15194" />
           <entry key="PLAIN_TEXT" value="53" />
@@ -132,8 +126,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/XEntity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="148" column="5" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
+            <state relative-caret-position="271">
+              <caret line="121" column="7" lean-forward="true" selection-start-line="121" selection-start-column="7" selection-end-line="121" selection-end-column="7" />
               <folding>
                 <element signature="e#113#184#0#PHP" />
                 <element signature="e#754#809#0#PHP" />
@@ -147,20 +141,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_xentity.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/TestBase.php">
+        <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+            <state relative-caret-position="48">
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -225,7 +210,6 @@
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_LenMin.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_LenMax.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_Decimal.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_Regex.php" />
         <option value="$PROJECT_DIR$/tests/XArray/test_memory.php" />
         <option value="$PROJECT_DIR$/tests/xarray/test_memory.php" />
@@ -257,6 +241,7 @@
         <option value="$PROJECT_DIR$/src/XEntity.php" />
         <option value="$PROJECT_DIR$/tests/test_xentity.php" />
         <option value="$PROJECT_DIR$/tests/TestBase.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
       </list>
     </option>
   </component>
@@ -317,8 +302,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="200" />
-    <option name="y" value="27" />
+    <option name="x" value="27" />
+    <option name="y" value="80" />
     <option name="width" value="1750" />
     <option name="height" value="970" />
   </component>
@@ -471,14 +456,11 @@
       <workItem from="1569157910888" duration="17000" />
       <workItem from="1569157993534" duration="984000" />
       <workItem from="1569246049204" duration="1751000" />
-      <workItem from="1569332024934" duration="3463000" />
+      <workItem from="1569332024934" duration="4146000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_xentity_test_101 - 2019.09.24 at 22h 25m 28s.xml">
-      <configuration name="test_xentity.test_101" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="test_xentity_test_101 - 2019.09.24 at 22h 25m 45s.xml">
       <configuration name="test_xentity.test_101" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -506,9 +488,12 @@
     <history-entry file="test_xentity_test_101 - 2019.09.24 at 22h 30m 38s.xml">
       <configuration name="test_xentity.test_101" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="test_xentity_test_101 - 2019.09.24 at 22h 31m 32s.xml">
+      <configuration name="test_xentity.test_101" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119461000" />
+    <option name="totallyTimeSpent" value="120144000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -520,7 +505,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="160" y="22" width="1400" height="776" extended-state="0" />
+    <frame x="22" y="64" width="1400" height="776" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962743" />
@@ -528,7 +513,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32763976" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.42857143" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42857143" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -782,13 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="29" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_cookie.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
@@ -881,10 +859,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/TestBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_xentity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/XEntity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="148" column="5" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
+        <state relative-caret-position="271">
+          <caret line="121" column="7" lean-forward="true" selection-start-line="121" selection-start-column="7" selection-end-line="121" selection-end-column="7" />
           <folding>
             <element signature="e#113#184#0#PHP" />
             <element signature="e#754#809#0#PHP" />
@@ -897,17 +889,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_xentity.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/TestBase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        <state relative-caret-position="48">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
         </state>
       </provider>
     </entry>
