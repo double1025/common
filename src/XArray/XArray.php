@@ -106,7 +106,7 @@ class XArray
 
     function toJson(): string
     {
-        return json_encode($this, JSON_UNESCAPED_UNICODE, JSON_UNESCAPED_SLASHES);
+        return H::funcArrayToStr($this->get());
     }
 
 

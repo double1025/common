@@ -147,7 +147,7 @@ class WebClient
     {
         $curl = curl_init();
 
-        var_dump($this->getOption());
+//        var_dump($this->getOption());
         curl_setopt_array($curl, $this->getOption());
 
         $result = curl_exec($curl);

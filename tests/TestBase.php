@@ -13,18 +13,10 @@ class TestBase extends TestCase
     {
         if (!is_string($msg))
         {
-            $msg = json_encode($msg, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+            $msg = H::funcArrayToStr($msg);
         }
 
         print $msg . PHP_EOL;
-    }
-
-    /**
-     * @return H
-     */
-    function H()
-    {
-        return new H();
     }
 
 

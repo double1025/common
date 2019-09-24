@@ -49,4 +49,10 @@ trait TraitHelperArray
         return $arr;
     }
 
+    
+    static function funcArrayToStr(& $arr)
+    {
+        return json_encode($arr, JSON_UNESCAPED_UNICODE, JSON_UNESCAPED_SLASHES);
+    }
+
 }
