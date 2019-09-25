@@ -22,6 +22,7 @@ class test_common extends TestBase
     {
         $r = new XReturn();
         $this->assertTrue($r instanceof XReturn);
+        $this->funcLog($r);
 
         $r = new XArray();
         $this->assertFalse($r instanceof XReturn);

@@ -13,7 +13,7 @@ class TestBase extends TestCase
     {
         if (!is_string($msg))
         {
-            $msg = H::funcArrayToStr($msg);
+            $msg = H::funcToStr($msg);
         }
 
         print $msg . PHP_EOL;

@@ -24,4 +24,16 @@ class H
 
         return $w === 'WIN';
     }
+
+
+    /**
+     * 转字符串
+     *
+     * @param $obj
+     * @return string
+     */
+    static function funcToStr($obj)
+    {
+        return json_encode($obj, JSON_UNESCAPED_UNICODE, JSON_UNESCAPED_SLASHES);
+    }
 }

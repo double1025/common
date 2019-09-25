@@ -8,7 +8,7 @@ namespace XWX\Common;
  * Class CommonReturn
  * @package XWX\Common
  */
-class XReturn
+class XReturn extends XEntity
 {
     public $errcode = -123456;
     public $errmsg = '';
@@ -16,7 +16,7 @@ class XReturn
     /**
      * @var array
      */
-    public $return_data = [];
+    protected $return_data = [];
 
 
     public function getData($key = null)

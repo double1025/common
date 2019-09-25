@@ -76,7 +76,7 @@ class XArray
     {
         if ($key != null)
         {
-            return H::funcArrayGet($this->pub_arr, $key);
+            return H::funcToStr($this->pub_arr, $key);
         }
 
         return $this->pub_arr;
@@ -106,7 +106,7 @@ class XArray
 
     function toJson(): string
     {
-        return H::funcArrayToStr($this->get());
+        return H::funcToStr($this->get());
     }
 
 
