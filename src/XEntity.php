@@ -3,8 +3,13 @@
 namespace XWX\Common;
 
 
+use XWX\Common\Traits\TraitCommon;
+
 class XEntity implements \JsonSerializable
 {
+    use TraitCommon;
+
+
     const FILTER_NOT_NULL = 1;
 
     private $pub_keys;

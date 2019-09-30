@@ -18,7 +18,7 @@ trait TraitCommon
         $r = new XReturn();
         $r->errcode = $errcode;
         $r->errmsg = $errmsg;
-        $r->return_data = $data;
+        $r->setVal('return_data', $data);
 
         return $r;
     }

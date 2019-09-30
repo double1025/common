@@ -3,6 +3,8 @@
 namespace XWX\Common\Traits\Helpers;
 
 
+use XWX\Common\H;
+
 trait TraitHelperStr
 {
     /**
@@ -39,6 +41,25 @@ trait TraitHelperStr
 
         return substr($s, 0, $max);
     }
+
+
+    /**
+     * 包含
+     *
+     * @param $s
+     * @param $contains
+     * @return bool
+     */
+    static function funcStrContains($s, $contains)
+    {
+        if (strpos($s, $contains) === false)
+        {
+            return false;
+        }
+
+        return true;
+    }
+
 
     /**
      * 是否以 $end 结尾
@@ -184,16 +205,28 @@ trait TraitHelperStr
      * 数组转key=val
      *
      * @param $arr
-     * @param null $exclude_list
+     * @param null $exclude_keys
      * @param bool $do_url_encode
      * @param bool $do_lower_key
      * @param bool $do_sort_key
      * @return string
      */
-    static function funcStrQueryFromArray($arr, $exclude_list = null
+    static function funcStrQueryFromArray($arr, $exclude_keys = null
         , $do_url_encode = true, $do_lower_key = false, $do_sort_key = true)
     {
-        $keys = array_keys(array_except($arr, $exclude_list));
+        if ($exclude_keys != null)
+        {
+            //过滤key
+            foreach ($exclude_keys as $key)
+            {
+                if (array_key_exists($key, $arr))
+                {
+                    unset($arr[$key]);
+                }
+            }
+        }
+
+        $keys = array_keys($arr);
         if ($do_sort_key)
         {
             sort($keys);
@@ -211,7 +244,11 @@ trait TraitHelperStr
                 $query .= "&{$k}=" . $arr[$k];
             }
         }
-//        $query = funcStrReduce1($query);
+
+        if (static::funcStrHasAnyText($query))
+        {
+            $query = substr($query, 1, strlen($query));
+        }
 
         return $query;
     }
