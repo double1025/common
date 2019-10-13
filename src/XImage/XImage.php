@@ -18,7 +18,7 @@ class XImage
     public function __construct($width, $height, $bg_red = 204, $bg_green = 204, $bg_blue = 204)
     {
         $assetsPath = __DIR__ . '/assets/ttf/';
-        if (!H::funcIsWin())
+        if (H::funcIsWin())
         {
             $assetsPath = __DIR__ . '\\assets\\ttf\\';
         }
@@ -148,8 +148,10 @@ class XImage
      */
     public function toPng()
     {
+        $res = $this->save(null, XImage::image_png);
         header("content-type:image/png");
-        $this->save(null, XImage::image_png);
+
+        echo $res;
     }
 
     /**
@@ -170,11 +172,14 @@ class XImage
     {
         $func = 'image' . $file_type;
 
-        $res = $func($this->pub_image, $file_path);
+        $func($this->pub_image, $file_path);
+
+        $bytes = ob_get_contents();
+        ob_end_clean();
 
         $this->destroy();
 
-        return $res;
+        return $bytes;
     }
 
     /**

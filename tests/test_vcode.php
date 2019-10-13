@@ -6,4 +6,6 @@ require_once '../vendor/autoload.php';
 
 $v = new \XWX\Common\XImage\VCode();
 //$v->funcCodeSave(rand(1000, 9999), 'D:/1.jpg');
-$v->funcCodeToPng(rand(1000, 9999));
+$v->funcCodeToPng(123);
+//header("content-type:image/png");
+//echo $v->funcCodeToBytes(rand(1000, 9999));

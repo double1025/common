@@ -3,6 +3,7 @@
 namespace XWX\Common;
 
 
+use Carbon\Carbon;
 use XWX\Common\Traits\TraitCommon;
 
 class XEntity implements \JsonSerializable
@@ -147,7 +148,14 @@ class XEntity implements \JsonSerializable
                 continue;
             }
 
-            $data[$key] = $item;
+            $val = $item;
+            if (is_a($item, Carbon::class))
+            {
+                //Carbon输出string
+                $val = $item->toDateTimeString();
+            }
+
+            $data[$key] = $val;
         }
 
         return $data;

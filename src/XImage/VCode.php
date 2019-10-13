@@ -45,6 +45,25 @@ class VCode
         }
     }
 
+    function funcCodeToBytes($code)
+    {
+        try
+        {
+            $this->funcDraw($code);
+
+            $res = $this->pub_app_images->save(null, XImage::image_png);
+
+            return $res;
+        }
+        catch (\Exception $ex)
+        {
+            $this->pub_app_images->destroy();
+
+            throw new \Exception($ex->getMessage());
+        }
+    }
+
+
     /**
      * 保存图片
      *
@@ -58,7 +77,7 @@ class VCode
         {
             $this->funcDraw($code);
 
-            $this->pub_app_images->save($save_path, XImage::image_jpeg);
+            $this->pub_app_images->save($save_path, XImage::image_png);
         }
         catch (\Exception $ex)
         {
