@@ -172,8 +172,8 @@ class XImage
     {
         $func = 'image' . $file_type;
 
+        ob_start();
         $func($this->pub_image, $file_path);
-
         $bytes = ob_get_contents();
         ob_end_clean();
 
