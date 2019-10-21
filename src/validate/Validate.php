@@ -88,6 +88,17 @@ class Validate
                     $is_pass = false;
 
                     $r->errmsg = str_replace(':fieldName', $key, $r->errmsg);
+                    $arg0 = $rule->getArgs(0);
+                    if (H::funcStrHasAnyText($arg0))
+                    {
+                        $r->errmsg = str_replace(':arg0', $arg0, $r->errmsg);
+                    }
+                    $arg1 = $rule->getArgs(1);
+                    if (H::funcStrHasAnyText($arg1))
+                    {
+                        $r->errmsg = str_replace(':arg1', $arg1, $r->errmsg);
+                    }
+
                     $errors[$key] = $r;
 
                     break;

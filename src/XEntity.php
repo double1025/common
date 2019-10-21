@@ -38,7 +38,7 @@ class XEntity implements \JsonSerializable
         if (is_callable($filter))
         {
             //匿名函数
-            $new_data = array_filter($data, $filter);
+            $new_data = array_filter($data, $filter, 1);//1表示,functino($v,$k)
         }
         else if ($filter == self::FILTER_NOT_NULL)
         {

@@ -193,6 +193,7 @@ class test_validate extends TestBase
         $v->addColumn('t1')
             ->func(function ($val)
             {
+                var_dump($val);
                 $r = new XReturn();
                 $r->setOK();
 
@@ -209,6 +210,7 @@ class test_validate extends TestBase
         $r = $v->validate([
             't1' => "123",
             't2' => "abc123",
+            't3' => "xxxxx",
         ], true);
 
         $this->assertEquals(false, $r);
@@ -334,6 +336,7 @@ class test_validate extends TestBase
         //不能 $key
         $this->assertArrayHasKey('t1', $v->getErrors());
         $this->assertArrayNotHasKey('t2', $v->getErrors());
+        $this->funcLog($v->getErrors());
         $this->assertArrayHasKey('t3', $v->getErrors());
     }
 
