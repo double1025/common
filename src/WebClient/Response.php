@@ -3,20 +3,27 @@
 namespace XWX\Common\WebClient;
 
 
-class Response
+use XWX\Common\H;
+use XWX\Common\XReturn;
+
+class Response extends XReturn
 {
     private $cookies = [];
     private $body = '';
-    private $error;
-    private $errorNo = null;
     private $curlInfo = [];
     private $headerLine = '';
 
     function __construct($rawResponse, $curlResource)
     {
         $this->curlInfo = curl_getinfo($curlResource);
-        $this->error = curl_error($curlResource);
-        $this->errorNo = curl_errno($curlResource);
+        $this->errcode = curl_errno($curlResource);
+        $this->errmsg = curl_error($curlResource);
+
+        if ($this->err())
+        {
+            throw new \Exception($this->errmsg);
+        }
+
         $this->headerLine = substr($rawResponse, 0, $this->curlInfo['header_size']);
         $this->body = substr($rawResponse, $this->curlInfo['header_size']);
         //处理头部中的cookie
@@ -65,26 +72,15 @@ class Response
     }
 
     /**
-     * @return string
-     */
-    public function getError(): string
-    {
-        return $this->error;
-    }
-
-    /**
-     * @return int|null
-     */
-    public function getErrorNo()
-    {
-        return $this->errorNo;
-    }
-
-    /**
      * @return array|mixed
      */
-    public function getCurlInfo()
+    public function getCurlInfo($key = null)
     {
+        if (H::funcStrHasAnyText($key))
+        {
+            return H::funcArrayGet($this->curlInfo, $key);
+        }
+
         return $this->curlInfo;
     }
 

@@ -9,6 +9,37 @@ use XWX\Common\XReturn;
 
 class test_base extends TestBase
 {
+    function test_xx()
+    {
+        $arr1 = ['a', 'b', 'c', 'a', 'b', 'c', 'a'];
+        $arr2 = [];
+        $arr_v = [];
+        foreach ($arr1 as $v)
+        {
+            if (array_key_exists($v, $arr_v))
+            {
+                $arr_v[$v]++;
+            }
+            else
+            {
+                $arr_v[$v] = 1;
+            }
+
+            $val = $v;
+            if ($arr_v[$v] > 1)
+            {
+                $val = "{$v}{$arr_v[$v]}";
+            }
+
+
+            $arr2[] = $val;
+        }
+
+        print $this->funcLog($arr1);
+        print $this->funcLog($arr2);
+//        print $this->funcLog($arr_v);
+    }
+
     function test_trueOrFalse()
     {
         $this->funcLog('=======true or false======');
@@ -41,11 +72,15 @@ class test_base extends TestBase
     function test_xreturn()
     {
         $r = new XReturn();
+        $r->errcode = -123456;
         $r->errmsg = '123';
         $r->setData('xx', [123]);
 
 //        var_dump($r);
-        print json_encode($r);
+        $this->funcLog($r->errcode);
+        $this->funcLog($r->keysSet());
+        $this->funcLog($r);
+        $this->assertTrue(true);
     }
 
     function test_wxcard()
@@ -84,7 +119,7 @@ class test_base extends TestBase
 
     function test_class()
     {
-        $class_name = sprintf('App\Common\WX\App\%s\%s', 'aaa','bbb');
+        $class_name = sprintf('App\Common\WX\App\%s\%s', 'aaa', 'bbb');
         var_dump($class_name);
 
         var_dump(XReturn::class);

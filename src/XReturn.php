@@ -2,6 +2,8 @@
 
 namespace XWX\Common;
 
+use Carbon\Carbon;
+
 /**
  * 返回类
  *
@@ -10,7 +12,7 @@ namespace XWX\Common;
  */
 class XReturn extends XEntity
 {
-    public $errcode = -123456;
+    protected $errcode = -123456;
     public $errmsg = '';
 
     /**
@@ -37,7 +39,7 @@ class XReturn extends XEntity
 
     public function setOK()
     {
-        $this->errcode = 0;
+        $this->setVal('errcode', 0);
     }
 
 

@@ -13,7 +13,10 @@ class XEntity implements \JsonSerializable
 
     const FILTER_NOT_NULL = 1;
 
+    //所有字段名
     private $pub_keys;
+    //设置过值的字段名
+    public $pub_keys__set = [];
 
 
     public function __construct($data = null)
@@ -72,7 +75,8 @@ class XEntity implements \JsonSerializable
                 continue;
             }
 
-            $this->setVal($k, $v);
+            //初始化不记录，字段赋值
+            $this->setVal($k, $v, false);
         }
     }
 
@@ -82,11 +86,21 @@ class XEntity implements \JsonSerializable
      *
      * @param $key
      * @param null $value
+     * @param bool $do_set_keys true:记录字段赋值;
      */
-    final public function setVal($key, $value = null): void
+    final public function setVal($key, $value = null, $do_set_keys = true): void
     {
         if ($this->keyExists($key))
         {
+            if ($do_set_keys)
+            {
+                //新值与旧值，不一致，记录，已修改过
+                if ($this->$key != $value)
+                {
+                    $this->pub_keys__set[$key] = 1;
+                }
+            }
+
             $this->$key = $value;
         }
     }
@@ -138,12 +152,23 @@ class XEntity implements \JsonSerializable
     }
 
 
+    /**
+     * 获取已赋值过的字段名
+     *
+     * @return array
+     */
+    final public function keysSet()
+    {
+        return array_keys($this->pub_keys__set);
+    }
+
+
     final public function jsonSerialize()
     {
         $data = [];
         foreach ($this as $key => $item)
         {
-            if ($key == 'pub_keys')
+            if (in_array($key, ['pub_keys', 'pub_keys__set']))
             {
                 continue;
             }
@@ -159,5 +184,17 @@ class XEntity implements \JsonSerializable
         }
 
         return $data;
+    }
+
+
+    //获取字段是否被赋值
+    public function __set($name, $value)
+    {
+        $this->setVal($name, $value);
+    }
+
+    public function __get($name)
+    {
+        return $this->getVal($name);
     }
 }

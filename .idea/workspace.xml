@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c701b4c4-1c67-4e1f-832e-3401fa8f8d20" name="默认" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/test_webclient.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebClient/Response.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebClient/Response.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WebClient/WebClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebClient/WebClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/XEntity.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/XEntity.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/XReturn.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/XReturn.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_base.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_base.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,35 +71,35 @@
     <session id="3651211">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="48" />
-          <entry key="project.open.time.0" value="19" />
-          <entry key="project.open.time.1" value="9" />
+          <entry key="project.closed" value="52" />
+          <entry key="project.open.time.0" value="21" />
+          <entry key="project.open.time.1" value="10" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="6" />
+          <entry key="project.open.time.7" value="7" />
           <entry key="project.open.time.8" value="7" />
           <entry key="project.open.time.9" value="5" />
-          <entry key="project.opened" value="50" />
+          <entry key="project.opened" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="json" value="19" />
+          <entry key="json" value="20" />
           <entry key="lock" value="1" />
           <entry key="md" value="5" />
-          <entry key="php" value="329" />
+          <entry key="php" value="344" />
           <entry key="phpunit" value="1" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="20" />
+          <entry key="JSON" value="21" />
           <entry key="Markdown" value="5" />
-          <entry key="PHP" value="330" />
+          <entry key="PHP" value="345" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
         </counts>
@@ -104,14 +109,14 @@
           <entry key="dummy" value="68" />
           <entry key="json" value="32" />
           <entry key="md" value="284" />
-          <entry key="php" value="16252" />
+          <entry key="php" value="17646" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="32" />
           <entry key="Markdown" value="278" />
-          <entry key="PHP" value="16258" />
+          <entry key="PHP" value="17652" />
           <entry key="PLAIN_TEXT" value="68" />
         </counts>
       </usages-collector>
@@ -123,65 +128,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Validate/Validate.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1568">
-              <caret line="99" column="21" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Validate/Rule/RuleBase.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/XEntity.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-              <folding>
-                <element signature="e#31#49#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Validate/ValidateFunc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3424">
-              <caret line="237" column="25" selection-start-line="237" selection-start-column="25" selection-end-line="237" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/validate/test_validate.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5360">
-              <caret line="339" column="56" selection-start-line="339" selection-start-column="56" selection-end-line="339" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -226,8 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/validate/Rule/Rule_LengthMin.php" />
-        <option value="$PROJECT_DIR$/src/validate/Rule/Rule_Max.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_Min.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_Money.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_Required.php" />
@@ -255,16 +200,13 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/Validate/Rule/Rule_Func.php" />
         <option value="$PROJECT_DIR$/tests/test_xml.php" />
-        <option value="$PROJECT_DIR$/tests/test_base.php" />
         <option value="$PROJECT_DIR$/tests/test_cookie.php" />
-        <option value="$PROJECT_DIR$/src/WebClient/WebClient.php" />
         <option value="$PROJECT_DIR$/src/AppEntity.php" />
         <option value="$PROJECT_DIR$/src/testEntity.php" />
         <option value="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperArray.php" />
         <option value="$PROJECT_DIR$/src/XArray/XArray.php" />
         <option value="$PROJECT_DIR$/tests/TestBase.php" />
         <option value="$PROJECT_DIR$/src/H.php" />
-        <option value="$PROJECT_DIR$/src/XReturn.php" />
         <option value="$PROJECT_DIR$/tests/test_common.php" />
         <option value="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperStr.php" />
         <option value="$PROJECT_DIR$/src/Traits/TraitCommon.php" />
@@ -275,8 +217,13 @@
         <option value="$PROJECT_DIR$/src/Validate/Validate.php" />
         <option value="$PROJECT_DIR$/tests/validate/test_validate.php" />
         <option value="$PROJECT_DIR$/src/Validate/Rule/RuleBase.php" />
-        <option value="$PROJECT_DIR$/src/XEntity.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/WebClient/WebClient.php" />
+        <option value="$PROJECT_DIR$/tests/test_webclient.php" />
+        <option value="$PROJECT_DIR$/src/WebClient/Response.php" />
+        <option value="$PROJECT_DIR$/src/XEntity.php" />
+        <option value="$PROJECT_DIR$/src/XReturn.php" />
+        <option value="$PROJECT_DIR$/tests/test_base.php" />
       </list>
     </option>
   </component>
@@ -336,9 +283,9 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="105" />
-    <option name="y" value="35" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="267" />
+    <option name="y" value="2" />
     <option name="width" value="1750" />
     <option name="height" value="970" />
   </component>
@@ -347,6 +294,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -362,44 +310,16 @@
             <path>
               <item name="common" type="b2602c69:ProjectViewProjectNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Validate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Validate" type="462c0819:PsiDirectoryNode" />
-              <item name="Rule" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="XArray" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="XImage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="common" type="b2602c69:ProjectViewProjectNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="validate" type="462c0819:PsiDirectoryNode" />
+              <item name="外部库" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -410,15 +330,15 @@
     <property name="settings.editor.selected.configurable" value="php.test.frameworks.configurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\_job\common\src\VCode\assets" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\_job\common\tests" />
       <recent name="D:\_job\common\src" />
       <recent name="D:\_job\common\tests\XArray" />
       <recent name="D:\_job\common\src\validate\Rule" />
       <recent name="D:\_job\common\src\Traits" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\_job\common\src\VCode\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -433,13 +353,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.test_validate.test_lenMax">
-    <configuration name="test_common.test_1010" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\test_common" file="$PROJECT_DIR$/tests/test_common.php" method="test_1010" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.test_base.test_xx">
+    <configuration name="test_base.test_xreturn" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\test_base" file="$PROJECT_DIR$/tests/test_base.php" method="test_xreturn" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="test_validate" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\validate\test_validate" file="$PROJECT_DIR$/tests/validate/test_validate.php" scope="Class" />
+    <configuration name="test_base.test_xx" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\test_base" file="$PROJECT_DIR$/tests/test_base.php" method="test_xx" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="test_validate.test_func" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -450,8 +370,8 @@
       <TestRunner class="Tests\validate\test_validate" file="$PROJECT_DIR$/tests/validate/test_validate.php" method="test_lenMax" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="test_xentity.test_101" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\test_xentity" file="$PROJECT_DIR$/tests/test_xentity.php" method="test_101" scope="Method" />
+    <configuration name="test_webclient.test_1010" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\test_webclient" file="$PROJECT_DIR$/tests/test_webclient.php" method="test_1010" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="PHP-TEST" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$/tests" host="127.0.0.1" port="168">
@@ -459,19 +379,19 @@
     </configuration>
     <list>
       <item itemvalue="PHP Built-in Web Server.PHP-TEST" />
-      <item itemvalue="PHPUnit.test_xentity.test_101" />
-      <item itemvalue="PHPUnit.test_common.test_1010" />
-      <item itemvalue="PHPUnit.test_validate" />
       <item itemvalue="PHPUnit.test_validate.test_func" />
       <item itemvalue="PHPUnit.test_validate.test_lenMax" />
+      <item itemvalue="PHPUnit.test_base.test_xx" />
+      <item itemvalue="PHPUnit.test_webclient.test_1010" />
+      <item itemvalue="PHPUnit.test_base.test_xreturn" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.test_base.test_xx" />
+        <item itemvalue="PHPUnit.test_base.test_xreturn" />
+        <item itemvalue="PHPUnit.test_webclient.test_1010" />
         <item itemvalue="PHPUnit.test_validate.test_lenMax" />
         <item itemvalue="PHPUnit.test_validate.test_func" />
-        <item itemvalue="PHPUnit.test_validate" />
-        <item itemvalue="PHPUnit.test_xentity.test_101" />
-        <item itemvalue="PHPUnit.test_common.test_1010" />
       </list>
     </recent_temporary>
   </component>
@@ -538,43 +458,47 @@
       <workItem from="1571667046582" duration="405000" />
       <workItem from="1571668494048" duration="96000" />
       <workItem from="1571671385356" duration="42000" />
+      <workItem from="1572945091914" duration="1274000" />
+      <workItem from="1573362208175" duration="1374000" />
+      <workItem from="1573372654475" duration="5312000" />
+      <workItem from="1573398107776" duration="716000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_xentity_test_101 - 2019.10.13 at 16h 31m 13s.xml">
-      <configuration name="test_xentity.test_101" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_base_test_xreturn - 2019.11.10 at 16h 41m 11s.xml">
+      <configuration name="test_base.test_xreturn" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_xentity_test_101 - 2019.10.13 at 16h 31m 42s.xml">
-      <configuration name="test_xentity.test_101" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_base_test_xreturn - 2019.11.10 at 16h 41m 16s.xml">
+      <configuration name="test_base.test_xreturn" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_xentity_test_101 - 2019.10.13 at 16h 32m 38s.xml">
-      <configuration name="test_xentity.test_101" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_base_test_xreturn - 2019.11.10 at 16h 42m 32s.xml">
+      <configuration name="test_base.test_xreturn" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_xentity_test_101 - 2019.10.13 at 16h 33m 54s.xml">
-      <configuration name="test_xentity.test_101" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_base_test_xreturn - 2019.11.10 at 16h 42m 57s.xml">
+      <configuration name="test_base.test_xreturn" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_validate - 2019.10.20 at 23h 09m 07s.xml">
-      <configuration name="test_validate" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_base_test_xreturn - 2019.11.10 at 16h 47m 22s.xml">
+      <configuration name="test_base.test_xreturn" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_validate_test_func - 2019.10.20 at 23h 09m 57s.xml">
-      <configuration name="test_validate.test_func" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_base_test_xreturn - 2019.11.10 at 17h 18m 36s.xml">
+      <configuration name="test_base.test_xreturn" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_validate_test_func - 2019.10.20 at 23h 10m 28s.xml">
-      <configuration name="test_validate.test_func" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_base_test_xreturn - 2019.11.10 at 17h 19m 06s.xml">
+      <configuration name="test_base.test_xreturn" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_validate_test_func - 2019.10.20 at 23h 14m 40s.xml">
-      <configuration name="test_validate.test_func" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_base_test_xreturn - 2019.11.10 at 17h 19m 16s.xml">
+      <configuration name="test_base.test_xreturn" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_validate_test_lenMax - 2019.10.21 at 22h 04m 57s.xml">
-      <configuration name="test_validate.test_lenMax" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_base_test_xx - 2019.11.10 at 23h 02m 01s.xml">
+      <configuration name="test_base.test_xx" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_validate_test_lenMax - 2019.10.21 at 22h 05m 18s.xml">
-      <configuration name="test_validate.test_lenMax" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="test_base_test_xx - 2019.11.10 at 23h 03m 25s.xml">
+      <configuration name="test_base.test_xx" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133454000" />
+    <option name="totallyTimeSpent" value="142130000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -586,15 +510,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="84" y="28" width="1400" height="776" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2481371" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23659517" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32763976" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.36827195" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37252125" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -617,21 +540,18 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/tests/test_base.php</url>
+          <line>71</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Validate/Rule/Rule_LenMin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Validate/Rule/Rule_Required.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Validate/Rule/Rule_Decimal.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -767,24 +687,10 @@
     <entry file="file://$PROJECT_DIR$/src/WebClient/Cookie.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebClient/WebClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="149" selection-start-line="149" selection-start-column="2" selection-end-line="149" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/XArray/XArr1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="896">
           <caret line="56" column="24" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_base.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
         </state>
       </provider>
     </entry>
@@ -817,20 +723,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Traits/TraitCommon.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_xentity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
@@ -852,13 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/json/json.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_vcode.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -870,13 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="9" column="37" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/XReturn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -904,20 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Validate/Validate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1568">
-          <caret line="99" column="21" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Validate/Rule/RuleBase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Validate/ValidateFunc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3424">
@@ -932,10 +796,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Validate/Rule/RuleBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Validate/Validate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="99" column="21" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_common.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_webclient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebClient/Response.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+          <folding>
+            <element signature="e#41#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebClient/WebClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="44" column="11" selection-start-line="44" selection-start-column="11" selection-end-line="44" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/json/json.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="88" column="9" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Traits/TraitCommon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/XEntity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
+        <state relative-caret-position="3040">
+          <caret line="190" selection-start-line="190" selection-end-line="190" />
           <folding>
             <element signature="e#31#49#0#PHP" expanded="true" />
           </folding>
@@ -944,8 +867,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        <state relative-caret-position="48">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/XReturn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_base.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
         </state>
       </provider>
     </entry>

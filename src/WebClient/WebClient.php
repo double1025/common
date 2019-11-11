@@ -41,14 +41,26 @@ class WebClient
     }
 
 
-    public function setTimeout(float $timeout): WebClient
+    /**
+     * 响应超时
+     *
+     * @param int $timeout
+     * @return WebClient
+     */
+    public function setTimeout(int $timeout): WebClient
     {
         $this->pub_curl_option[CURLOPT_TIMEOUT] = $timeout;
 
         return $this;
     }
 
-    public function setConnectTimeout(float $connectTimeout): WebClient
+    /**
+     * 连接超时
+     *
+     * @param int $connectTimeout
+     * @return WebClient
+     */
+    public function setConnectTimeout(int $connectTimeout): WebClient
     {
         $this->pub_curl_option[CURLOPT_CONNECTTIMEOUT] = $connectTimeout;
         return $this;
