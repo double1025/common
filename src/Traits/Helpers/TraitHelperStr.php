@@ -23,6 +23,23 @@ trait TraitHelperStr
         return $def;
     }
 
+    /**
+     * 字符串转float
+     *
+     * @param $s
+     * @param float $def
+     * @return float
+     */
+    static function funcStrToFloat($s, $def = 0.0): float
+    {
+        if (is_numeric($s))
+        {
+            return floatval($s);
+        }
+
+        return $def;
+    }
+
 
     /**
      * 字符串截取$max长度

@@ -11,6 +11,10 @@ class test_base extends TestBase
 {
     function test_xx()
     {
+        $a = 'abc';
+        var_dump(H::funcStrToFloat($a));
+
+
         $arr1 = ['a', 'b', 'c', 'a', 'b', 'c', 'a'];
         $arr2 = [];
         $arr_v = [];
