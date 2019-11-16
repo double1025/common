@@ -10,9 +10,10 @@ trait TraitHelperArray
      *
      * @param $arr
      * @param $key
+     * @param null $def
      * @return mixed|null
      */
-    static function funcArrayGet(& $arr, $key)
+    static function funcArrayGet(& $arr, $key, $def = null)
     {
         if (is_array($arr))
         {
@@ -22,7 +23,7 @@ trait TraitHelperArray
             }
         }
 
-        return null;
+        return $def;
     }
 
     /**
