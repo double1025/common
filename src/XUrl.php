@@ -2,20 +2,30 @@
 
 namespace XWX\Common;
 
-use Carbon\Carbon;
-
 /**
  * 返回类
+ *
+ * @property $scheme;
+ * @property $host;
+ * @property $path;
  *
  * Class CommonReturn
  * @package XWX\Common
  */
 class XUrl extends XEntity
 {
-    protected $http_root; //域名
-    protected $page_name = '';//页面名
+    protected $url_original;//原URL
     protected $url = ''; //URL
+    protected $root; //域名
+    protected $page_name = '';//页面名
     protected $query_data = []; //URL带的参数
+    //
+    protected $scheme = 'http';
+    protected $host; //www.baidu.com
+    protected $port;
+    protected $path;
+    protected $query;
+    protected $isSSL = false;
 
 
     public function __construct($data = null)
@@ -30,31 +40,40 @@ class XUrl extends XEntity
      */
     public function init($url)
     {
+        $this->url_original = $url;
+
         //https://www.baidu.com/v?wd=xxx
         //_template/head/head.wx.jssdk.html?dev=true
         $data = parse_url($url);
 
 
-        $scheme = H::funcArrayGet($data, 'scheme');
-        $host = H::funcArrayGet($data, 'host');
-        $path = H::funcArrayGet($data, 'path');
+        $this->scheme = H::funcArrayGet($data, 'scheme');
+        $this->host = H::funcArrayGet($data, 'host');
+        $this->port = H::funcArrayGet($data, 'port');
+        $this->path = H::funcArrayGet($data, 'path');
+        //url参数
+        $this->query = H::funcArrayGet($data, 'query');
 
-        if (H::funcStrHasAnyText($scheme) && H::funcStrHasAnyText($host))
+
+        if ($this->scheme == 'https')
         {
-            $this->http_root = "{$scheme}://{$host}";
+            $this->isSSL = true;
+        }
+
+        if (H::funcStrHasAnyText($this->scheme) && H::funcStrHasAnyText($this->host))
+        {
+            $this->root = "{$this->scheme}://{$this->host}";
         }
 
 
-        $this->url = "{$this->http_root}{$path}";
+        $this->url = "{$this->root}{$this->path}";
 
-        $url_data = explode('/', $this->url);
+        $url_data = explode('/', $this->path);
         $this->page_name = array_pop($url_data);
 
-        //url参数
-        $query = H::funcArrayGet($data, 'query');
-        if (H::funcStrHasAnyText($query))
+        if (H::funcStrHasAnyText($this->query))
         {
-            $querys = explode('&', $query);
+            $querys = explode('&', $this->query);
             foreach ($querys as $v)
             {
                 $q_data = explode('=', $v);
@@ -64,21 +83,100 @@ class XUrl extends XEntity
         }
     }
 
-    public function http_root()
+
+    /**
+     * 端口
+     * @return mixed
+     */
+    public function port()
     {
-        return $this->http_root;
+        if (H::funcStrIsNullOrEmpty($this->port))
+        {
+            if ($this->isSSL)
+            {
+                $this->port = 443;
+            }
+            else
+            {
+                $this->port = 80;
+            }
+        }
+
+        return $this->port;
     }
 
+
+    public function pathAndQuery()
+    {
+        $path = $this->path;
+        if (H::funcStrIsNullOrEmpty($path))
+        {
+            $path = '/';
+        }
+
+        $query = $this->query;
+        if (H::funcStrIsNullOrEmpty($query))
+        {
+            return $path;
+        }
+        else
+        {
+            return "{$path}?{$query}";
+        }
+    }
+
+
+    /**
+     * 是否https请求
+     * @return bool
+     */
+    public function isSSL()
+    {
+        return $this->isSSL;
+    }
+
+    /**
+     * 域名
+     * @return string
+     */
+    public function root()
+    {
+        return $this->root;
+    }
+
+    /**
+     * 页面名称
+     * @return string
+     */
     public function page_name()
     {
         return $this->page_name;
     }
 
+
+    /**
+     * 原URL
+     * @return string
+     */
+    public function url_original()
+    {
+        return $this->url_original;
+    }
+
+    /**
+     * 去掉参数的URL
+     * @return string
+     */
     public function url()
     {
         return $this->url;
     }
 
+    /**
+     * URL参数
+     * @param null $key
+     * @return array|mixed|null
+     */
     public function getQuery($key = null)
     {
         if ($key !== null)

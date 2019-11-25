@@ -8,60 +8,31 @@ use XWX\Common\XReturn;
 
 class Response extends XReturn
 {
-    private $cookies = [];
-    private $body = '';
-    private $curlInfo = [];
-    private $headerLine = '';
+    protected $cookies = [];
+    protected $body = '';
+    protected $resInfo = [];
+    protected $headers = [];
 
-    function __construct($rawResponse, $curlResource)
+    function __construct()
     {
-        $this->curlInfo = curl_getinfo($curlResource);
-        $this->errcode = curl_errno($curlResource);
-        $this->errmsg = curl_error($curlResource);
-
-        if ($this->err())
-        {
-            throw new \Exception($this->errmsg);
-        }
-
-        $this->headerLine = substr($rawResponse, 0, $this->curlInfo['header_size']);
-        $this->body = substr($rawResponse, $this->curlInfo['header_size']);
-        //处理头部中的cookie
-        preg_match_all("/Set-Cookie:(.*)\n/U", $this->headerLine, $ret);
-        if (!empty($ret[0]))
-        {
-            foreach ($ret[0] as $item)
-            {
-                preg_match('/(Cookie: )(.*?)(\r\n)/', $item, $ret);
-                $ret = explode('=', trim($ret[2], ';'));
-                $cookie = new Cookie();
-                $cookie->setName($ret[0]);
-                $cookie->setValue($ret[1]);
-                $this->cookies[$ret[0]] = $cookie;
-            }
-        }
-        curl_close($curlResource);
     }
 
+
     /**
-     * @return array
+     * cookie
+     * @param null $key
+     * @return array|mixed|null
      */
-    public function getCookies(): array
+    public function getCookie($key = null)
     {
+        if (H::funcStrHasAnyText($key))
+        {
+            return H::funcArrayGet($this->cookies, $key);
+        }
+
         return $this->cookies;
     }
 
-    public function getCookie($name): ?Cookie
-    {
-        if (isset($this->cookies[$name]))
-        {
-            return $this->cookies[$name];
-        }
-        else
-        {
-            return null;
-        }
-    }
 
     /**
      * @return bool|string
@@ -71,30 +42,34 @@ class Response extends XReturn
         return $this->body;
     }
 
+
     /**
+     * 客户端信息
+     * @param null $key
      * @return array|mixed
      */
-    public function getCurlInfo($key = null)
+    public function getResInfo($key = null)
     {
         if (H::funcStrHasAnyText($key))
         {
-            return H::funcArrayGet($this->curlInfo, $key);
+            return H::funcArrayGet($this->resInfo, $key);
         }
 
-        return $this->curlInfo;
+        return $this->resInfo;
     }
 
     /**
-     * @return bool|string
+     * 请求头
+     * @param null $key
+     * @return array|mixed|null
      */
-    public function getHeaderLine()
+    public function getHeader($key = null)
     {
-        return $this->headerLine;
-    }
+        if (H::funcStrHasAnyText($key))
+        {
+            return H::funcArrayGet($this->headers, $key);
+        }
 
-    public function __toString()
-    {
-        // TODO: Implement __toString() method.
-        return $this->getBody();
+        return $this->headers;
     }
 }

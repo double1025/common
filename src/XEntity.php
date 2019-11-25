@@ -65,8 +65,9 @@ class XEntity implements \JsonSerializable
      * 填充
      *
      * @param array $data
+     * @param bool $do_set_keys
      */
-    public function fill(array $data)
+    public function fill(array $data, $do_set_keys = false)
     {
         foreach ($data as $k => $v)
         {
@@ -76,7 +77,7 @@ class XEntity implements \JsonSerializable
             }
 
             //初始化不记录，字段赋值
-            $this->setVal($k, $v, false);
+            $this->setVal($k, $v, $do_set_keys);
         }
     }
 

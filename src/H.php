@@ -5,6 +5,7 @@ namespace XWX\Common;
 
 use XWX\Common\Traits\Helpers\TraitHelper;
 use XWX\Common\Traits\Helpers\TraitHelperArray;
+use XWX\Common\Traits\Helpers\TraitHelperCarbon;
 use XWX\Common\Traits\Helpers\TraitHelperStr;
 
 /**
@@ -15,7 +16,7 @@ use XWX\Common\Traits\Helpers\TraitHelperStr;
  */
 class H
 {
-    use TraitHelper, TraitHelperStr, TraitHelperArray;
+    use TraitHelper, TraitHelperStr, TraitHelperArray, TraitHelperCarbon;
 
 
     static function funcIsWin()

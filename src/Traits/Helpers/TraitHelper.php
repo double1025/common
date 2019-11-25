@@ -3,7 +3,6 @@
 namespace XWX\Common\Traits\Helpers;
 
 
-use App\X\XContext;
 use Carbon\Carbon;
 
 trait TraitHelper

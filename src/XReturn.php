@@ -6,6 +6,8 @@ use Carbon\Carbon;
 
 /**
  * 返回类
+ * @property $errcode;
+ * @property $errmsg;
  *
  * Class CommonReturn
  * @package XWX\Common
@@ -13,7 +15,7 @@ use Carbon\Carbon;
 class XReturn extends XEntity
 {
     protected $errcode = -123456;
-    public $errmsg = '';
+    protected $errmsg = '';
 
     /**
      * @var array

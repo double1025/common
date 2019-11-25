@@ -11,6 +11,12 @@ class test_base extends TestBase
 {
     function test_xx()
     {
+        $url = 'https://www.baidu.com:5050/v?wd=xxx';
+//        $url = '_template/head/head.wx.jssdk.html?dev=true';
+        //_template/head/head.wx.jssdk.html?dev=true
+        $data = parse_url($url);
+        var_dump($data);
+
         $a = 'abc';
         var_dump(H::funcStrToFloat($a));
 
@@ -41,6 +47,8 @@ class test_base extends TestBase
 
         print $this->funcLog($arr1);
         print $this->funcLog($arr2);
+
+//        print $this->funcLog(H::funcCarbonStartOfWeek());
 //        print $this->funcLog($arr_v);
     }
 
