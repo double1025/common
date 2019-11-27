@@ -16,7 +16,7 @@ class XEntity implements \JsonSerializable
     //所有字段名
     private $pub_keys;
     //设置过值的字段名
-    public $pub_keys__set = [];
+    private $pub_keys__set = [];
 
 
     public function __construct($data = null)

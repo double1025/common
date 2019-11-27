@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c701b4c4-1c67-4e1f-832e-3401fa8f8d20" name="默认" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperCarbon.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WebClient/WebClientCo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_webclient_co.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/common.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/H.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/H.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Traits/Helpers/TraitHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/Helpers/TraitHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebClient/Response.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebClient/Response.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WebClient/WebClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/WebClient/WebClient.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/XEntity.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/XEntity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/XReturn.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/XReturn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/XUrl.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/XUrl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_base.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_base.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_webclient.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_webclient.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_xurl.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_xurl.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,9 +66,10 @@
     <session id="3651211">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="63" />
-          <entry key="project.open.time.0" value="29" />
+          <entry key="project.closed" value="65" />
+          <entry key="project.open.time.0" value="30" />
           <entry key="project.open.time.1" value="13" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
@@ -91,7 +77,7 @@
           <entry key="project.open.time.7" value="7" />
           <entry key="project.open.time.8" value="7" />
           <entry key="project.open.time.9" value="5" />
-          <entry key="project.opened" value="65" />
+          <entry key="project.opened" value="67" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -100,7 +86,7 @@
           <entry key="json" value="23" />
           <entry key="lock" value="1" />
           <entry key="md" value="5" />
-          <entry key="php" value="401" />
+          <entry key="php" value="404" />
           <entry key="phpunit" value="1" />
           <entry key="xml" value="1" />
         </counts>
@@ -109,7 +95,7 @@
         <counts>
           <entry key="JSON" value="24" />
           <entry key="Markdown" value="5" />
-          <entry key="PHP" value="402" />
+          <entry key="PHP" value="405" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
         </counts>
@@ -119,14 +105,14 @@
           <entry key="dummy" value="84" />
           <entry key="json" value="34" />
           <entry key="md" value="284" />
-          <entry key="php" value="21384" />
+          <entry key="php" value="21387" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="34" />
           <entry key="Markdown" value="278" />
-          <entry key="PHP" value="21390" />
+          <entry key="PHP" value="21393" />
           <entry key="PLAIN_TEXT" value="84" />
         </counts>
       </usages-collector>
@@ -139,23 +125,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WebClient/WebClientCo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="93" column="34" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/WebClient/WebClient.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="273" column="39" lean-forward="true" selection-start-line="273" selection-start-column="16" selection-end-line="273" selection-end-column="39" />
-              <folding>
-                <element signature="e#41#58#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="144">
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -163,20 +137,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/WebClient/Response.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="64">
+              <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_webclient.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/XEntity.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-              <folding>
-                <element signature="e#26#43#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="-256">
+              <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -270,7 +241,6 @@
         <option value="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperCarbon.php" />
         <option value="$PROJECT_DIR$/src/XReturn.php" />
         <option value="$PROJECT_DIR$/tests/test_base.php" />
-        <option value="$PROJECT_DIR$/src/XEntity.php" />
         <option value="$PROJECT_DIR$/tests/test_webclient_co.php" />
         <option value="$PROJECT_DIR$/src/XUrl.php" />
         <option value="$PROJECT_DIR$/composer.json" />
@@ -279,6 +249,7 @@
         <option value="$PROJECT_DIR$/tests/test_webclient.php" />
         <option value="$PROJECT_DIR$/src/WebClient/Response.php" />
         <option value="$PROJECT_DIR$/src/WebClient/WebClientCo.php" />
+        <option value="$PROJECT_DIR$/src/XEntity.php" />
       </list>
     </option>
   </component>
@@ -339,9 +310,9 @@
       <path value="$PROJECT_DIR$/vendor/easyswoole/swoole-ide-helper" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="15" />
-    <option name="y" value="26" />
+    <option name="y" value="25" />
     <option name="width" value="1750" />
     <option name="height" value="970" />
   </component>
@@ -350,6 +321,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -381,7 +353,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -535,6 +506,8 @@
       <workItem from="1574084745245" duration="5159000" />
       <workItem from="1574503410071" duration="12812000" />
       <workItem from="1574689969176" duration="5060000" />
+      <workItem from="1574858171405" duration="600000" />
+      <workItem from="1574865154652" duration="108000" />
     </task>
     <servers />
   </component>
@@ -571,7 +544,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170399000" />
+    <option name="totallyTimeSpent" value="171107000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -583,10 +556,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="21" width="1400" height="776" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30402383" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28150135" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -865,13 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/XEntity.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1136">
-          <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_common.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -890,13 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/XReturn.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-71">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -928,37 +887,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebClient/Response.php">
+    <entry file="file://$PROJECT_DIR$/src/WebClient/WebClient.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="128">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_webclient.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
-          <folding>
-            <element signature="e#26#43#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="128">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WebClient/WebClient.php">
+    <entry file="file://$PROJECT_DIR$/src/XReturn.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="273" column="39" lean-forward="true" selection-start-line="273" selection-start-column="16" selection-end-line="273" selection-end-column="39" />
-          <folding>
-            <element signature="e#41#58#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="16">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/WebClient/WebClientCo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="93" column="34" selection-start-line="93" selection-start-column="34" selection-end-line="93" selection-end-column="34" />
+        <state relative-caret-position="144">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WebClient/Response.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/XEntity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-256">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
         </state>
       </provider>
     </entry>
