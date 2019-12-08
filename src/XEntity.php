@@ -164,10 +164,19 @@ class XEntity implements \JsonSerializable
     }
 
 
+    /**
+     * 原实体字段[可重写]
+     * @return $this
+     */
+    protected function funcGetOriginalData()
+    {
+        return $this;
+    }
+
     final public function jsonSerialize()
     {
         $data = [];
-        foreach ($this as $key => $item)
+        foreach ($this->funcGetOriginalData() as $key => $item)
         {
             if (in_array($key, ['pub_keys', 'pub_keys__set']))
             {

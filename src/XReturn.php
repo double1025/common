@@ -54,4 +54,26 @@ class XReturn extends XEntity
     {
         return $this->errcode != 0;
     }
+
+
+    protected function funcGetOriginalData()
+    {
+        $data = [];
+        foreach ($this as $key => $val)
+        {
+            if (in_array($key, ['return_data']))
+            {
+                continue;
+            }
+
+            $data[$key] = $val;
+        }
+
+        foreach ($this->getData() as $key => $val)
+        {
+            $data[$key] = $val;
+        }
+
+        return $data;
+    }
 }

@@ -86,6 +86,7 @@ class test_base extends TestBase
         $r = new XReturn();
         $r->errcode = -123456;
         $r->errmsg = '123';
+        $r->setData('aaa', '123');
         $r->setData('xx', [123]);
 
 //        var_dump($r);
