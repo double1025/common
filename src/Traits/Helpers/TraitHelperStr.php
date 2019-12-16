@@ -269,4 +269,33 @@ trait TraitHelperStr
 
         return $query;
     }
+
+
+    /**
+     * 下划线转驼峰
+     *
+     * @param $str
+     * @param string $separator
+     * @return string
+     */
+    static function funcStrToCamelize($str)
+    {
+        $separator = '_';
+        $str = $separator . str_replace($separator, " ", strtolower($str));
+
+        return ltrim(str_replace(" ", "", ucwords($str)), $separator);
+    }
+
+
+    /**
+     * 驼峰转下划线
+     * @param $camel_str
+     * @return string
+     */
+    static function funcStrToUnCamelize($camel_str)
+    {
+        $separator = '_';
+
+        return strtolower(preg_replace('/([a-z])([A-Z])/', "$1" . $separator . "$2", $camel_str));
+    }
 }

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c701b4c4-1c67-4e1f-832e-3401fa8f8d20" name="默认" comment="">
-      <change beforePath="$PROJECT_DIR$/src/XEntity.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/XEntity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/XReturn.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/XReturn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_base.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_base.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_str.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperStr.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperStr.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +67,8 @@
     <session id="3651211">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="65" />
-          <entry key="project.open.time.0" value="31" />
+          <entry key="project.closed" value="66" />
+          <entry key="project.open.time.0" value="32" />
           <entry key="project.open.time.1" value="13" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.3" value="1" />
@@ -78,7 +78,7 @@
           <entry key="project.open.time.7" value="7" />
           <entry key="project.open.time.8" value="7" />
           <entry key="project.open.time.9" value="5" />
-          <entry key="project.opened" value="68" />
+          <entry key="project.opened" value="69" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -87,7 +87,7 @@
           <entry key="json" value="23" />
           <entry key="lock" value="1" />
           <entry key="md" value="5" />
-          <entry key="php" value="416" />
+          <entry key="php" value="419" />
           <entry key="phpunit" value="1" />
           <entry key="xml" value="1" />
         </counts>
@@ -96,25 +96,25 @@
         <counts>
           <entry key="JSON" value="24" />
           <entry key="Markdown" value="5" />
-          <entry key="PHP" value="417" />
+          <entry key="PHP" value="420" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="84" />
+          <entry key="dummy" value="87" />
           <entry key="json" value="34" />
           <entry key="md" value="284" />
-          <entry key="php" value="21573" />
+          <entry key="php" value="21761" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="34" />
           <entry key="Markdown" value="278" />
-          <entry key="PHP" value="21579" />
-          <entry key="PLAIN_TEXT" value="84" />
+          <entry key="PHP" value="21767" />
+          <entry key="PLAIN_TEXT" value="87" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
@@ -129,17 +129,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/XReturn.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
+            <state relative-caret-position="315">
               <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/XEntity.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="427">
               <caret line="175" column="16" selection-start-line="175" selection-start-column="10" selection-end-line="175" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Traits/Helpers/TraitHelperStr.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="288" lean-forward="true" selection-start-line="288" selection-end-line="288" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/test_str.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -191,7 +209,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/validate/Rule/Rule_LenBetween.php" />
         <option value="$PROJECT_DIR$/src/validate/Validate.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/RuleBase.php" />
         <option value="$PROJECT_DIR$/src/validate/Rule/Rule_IsIP.php" />
@@ -227,7 +244,6 @@
         <option value="$PROJECT_DIR$/tests/validate/test_validate.php" />
         <option value="$PROJECT_DIR$/src/Validate/Rule/RuleBase.php" />
         <option value="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperArray.php" />
-        <option value="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperStr.php" />
         <option value="$PROJECT_DIR$/src/Traits/Helpers/TraitHelper.php" />
         <option value="$PROJECT_DIR$/src/H.php" />
         <option value="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperCarbon.php" />
@@ -242,6 +258,8 @@
         <option value="$PROJECT_DIR$/tests/test_base.php" />
         <option value="$PROJECT_DIR$/src/XReturn.php" />
         <option value="$PROJECT_DIR$/src/XEntity.php" />
+        <option value="$PROJECT_DIR$/src/Traits/Helpers/TraitHelperStr.php" />
+        <option value="$PROJECT_DIR$/tests/test_str.php" />
       </list>
     </option>
   </component>
@@ -302,7 +320,7 @@
       <path value="$PROJECT_DIR$/vendor/easyswoole/swoole-ide-helper" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="15" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
@@ -329,6 +347,19 @@
               <item name="common" type="b2602c69:ProjectViewProjectNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Traits" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Traits" type="462c0819:PsiDirectoryNode" />
+              <item name="Helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="WebClient" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -339,6 +370,24 @@
             <path>
               <item name="common" type="b2602c69:ProjectViewProjectNode" />
               <item name="外部库" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="外部库" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+            </path>
+            <path>
+              <item name="common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="外部库" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="common" type="b2602c69:ProjectViewProjectNode" />
+              <item name="外部库" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP" type="5114b859:PhpExternalLibrariesNodePatcher$PatchedLibraryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -355,15 +404,15 @@
     <property name="settings.editor.selected.configurable" value="php.test.frameworks.configurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\_job\common\src\VCode\assets" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\_job\common\tests" />
       <recent name="D:\_job\common\vendor\easyswoole" />
       <recent name="D:\_job\common\src\WebClient" />
       <recent name="D:\_job\common\src\Traits\Helpers" />
       <recent name="D:\_job\common\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\_job\common\src\VCode\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -378,13 +427,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.test_base.test_xreturn">
+  <component name="RunManager" selected="PHPUnit.test_str.test_1010">
     <configuration name="test_base.test_xreturn" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\test_base" file="$PROJECT_DIR$/tests/test_base.php" method="test_xreturn" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="test_base.test_xx" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\test_base" file="$PROJECT_DIR$/tests/test_base.php" method="test_xx" scope="Method" />
+    <configuration name="test_str.test_1010" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\test_str" file="$PROJECT_DIR$/tests/test_str.php" method="test_1010" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="test_webclient.test_1010" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -404,19 +453,19 @@
     </configuration>
     <list>
       <item itemvalue="PHP Built-in Web Server.PHP-TEST" />
-      <item itemvalue="PHPUnit.test_base.test_xx" />
       <item itemvalue="PHPUnit.test_webclient.test_1010" />
       <item itemvalue="PHPUnit.test_base.test_xreturn" />
       <item itemvalue="PHPUnit.test_xurl.test_1010" />
       <item itemvalue="PHPUnit.test_xentity.test_101" />
+      <item itemvalue="PHPUnit.test_str.test_1010" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.test_str.test_1010" />
         <item itemvalue="PHPUnit.test_base.test_xreturn" />
         <item itemvalue="PHPUnit.test_webclient.test_1010" />
         <item itemvalue="PHPUnit.test_xurl.test_1010" />
         <item itemvalue="PHPUnit.test_xentity.test_101" />
-        <item itemvalue="PHPUnit.test_base.test_xx" />
       </list>
     </recent_temporary>
   </component>
@@ -501,28 +550,11 @@
       <workItem from="1574858171405" duration="600000" />
       <workItem from="1574865154652" duration="108000" />
       <workItem from="1575773364914" duration="1654000" />
+      <workItem from="1576509931439" duration="483000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_webclient_test_1010 - 2019.11.25 at 22h 56m 30s.xml">
-      <configuration name="test_webclient.test_1010" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_webclient_test_1010 - 2019.11.25 at 22h 56m 46s.xml">
-      <configuration name="test_webclient.test_1010" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_webclient_test_1010 - 2019.11.25 at 22h 56m 57s.xml">
-      <configuration name="test_webclient.test_1010" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_webclient_test_1010 - 2019.11.25 at 23h 03m 57s.xml">
-      <configuration name="test_webclient.test_1010" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_webclient_test_1010 - 2019.11.25 at 23h 07m 55s.xml">
-      <configuration name="test_webclient.test_1010" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_xentity_test_101 - 2019.12.08 at 11h 03m 37s.xml">
-      <configuration name="test_xentity.test_101" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="test_base_test_xreturn - 2019.12.08 at 11h 04m 08s.xml">
       <configuration name="test_base.test_xreturn" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -535,9 +567,27 @@
     <history-entry file="test_webclient_test_1010 - 2019.12.08 at 11h 05m 39s.xml">
       <configuration name="test_webclient.test_1010" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="test_str_test_1010 - 2019.12.16 at 23h 29m 34s.xml">
+      <configuration name="test_str.test_1010" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_str_test_1010 - 2019.12.16 at 23h 29m 44s.xml">
+      <configuration name="test_str.test_1010" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_str_test_1010 - 2019.12.16 at 23h 32m 51s.xml">
+      <configuration name="test_str.test_1010" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_str_test_1010 - 2019.12.16 at 23h 33m 06s.xml">
+      <configuration name="test_str.test_1010" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_str_test_1010 - 2019.12.16 at 23h 33m 13s.xml">
+      <configuration name="test_str.test_1010" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_str_test_1010 - 2019.12.16 at 23h 33m 29s.xml">
+      <configuration name="test_str.test_1010" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172761000" />
+    <option name="totallyTimeSpent" value="173244000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -552,7 +602,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2855228" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26072386" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -592,13 +642,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Util/Printer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="108" selection-start-line="108" selection-end-line="108" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -755,13 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Traits/Helpers/TraitHelperStr.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="262" column="9" selection-start-line="262" selection-start-column="9" selection-end-line="262" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/H.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -807,13 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_common.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -908,10 +937,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/XReturn.php">
+    <entry file="file://$PROJECT_DIR$/tests/test_common.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+        <state relative-caret-position="413">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -919,6 +948,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
           <caret line="175" column="16" selection-start-line="175" selection-start-column="10" selection-end-line="175" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/XReturn.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="58" column="13" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Traits/Helpers/TraitHelperStr.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="288" lean-forward="true" selection-start-line="288" selection-end-line="288" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_str.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
         </state>
       </provider>
     </entry>
