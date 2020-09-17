@@ -11,6 +11,10 @@ class test_base extends TestBase
 {
     function test_xx()
     {
+        $arr_t = ['1', '2', '3', '4', '5', '6', '7'];
+        H::funcArrayDelByKey($arr_t, [0, 5]);
+        var_dump($arr_t);
+
         $url = 'https://www.baidu.com:5050/v?wd=xxx';
 //        $url = '_template/head/head.wx.jssdk.html?dev=true';
         //_template/head/head.wx.jssdk.html?dev=true

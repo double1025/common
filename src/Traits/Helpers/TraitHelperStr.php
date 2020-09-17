@@ -50,13 +50,24 @@ trait TraitHelperStr
      */
     static function funcStrMaxLen($s, $max)
     {
-        $s_len = strlen($s);
+        $s_len = static::funcStrLen($s);
         if ($s_len < $max)
         {
             return $s;
         }
 
-        return substr($s, 0, $max);
+        return mb_substr($s, 0, $max);
+    }
+
+    /**
+     * 字段串长度
+     *
+     * @param $s
+     * @return int
+     */
+    static function funcStrLen($s)
+    {
+        return mb_strlen($s);
     }
 
 
@@ -194,7 +205,7 @@ trait TraitHelperStr
         $str = $s;
         if (is_string($str))
         {
-            $str = strtoupper($s);
+            $str = mb_strtoupper($s, 'UTF-8');
         }
 
         return $str;
@@ -211,7 +222,7 @@ trait TraitHelperStr
         $str = $s;
         if (is_string($str))
         {
-            $str = strtolower($s);
+            $str = mb_strtolower($s, 'UTF-8');
         }
 
         return $str;
