@@ -286,7 +286,6 @@ trait TraitHelperStr
      * 下划线转驼峰
      *
      * @param $str
-     * @param string $separator
      * @return string
      */
     static function funcStrToCamelize($str)
@@ -308,5 +307,25 @@ trait TraitHelperStr
         $separator = '_';
 
         return strtolower(preg_replace('/([a-z])([A-Z])/', "$1" . $separator . "$2", $camel_str));
+    }
+
+
+    /**
+     * 字符串 分隔显示
+     * @param $str
+     * @param int $num 多少字符分隔
+     * @param string $glue 分隔符
+     * @return string
+     */
+    static function funcStrSplit($str, $num, $glue = ' ')
+    {
+        if (H::funcStrIsNullOrEmpty($str))
+        {
+            return '';
+        }
+
+
+        $code_data = str_split($str, $num);
+        return join($glue, $code_data);
     }
 }
