@@ -2,8 +2,6 @@
 
 namespace XWX\Common;
 
-use Carbon\Carbon;
-
 /**
  * 返回类
  * @property $errcode;

@@ -1,9 +1,10 @@
 <?php
 
-namespace XWX\Common\Traits\Helpers;
+
+namespace XWX\Common\Util;
 
 
-trait TraitHelperArray
+class Arr
 {
     /**
      * 根据key获取数组值，若无key，则null
@@ -13,7 +14,7 @@ trait TraitHelperArray
      * @param null $def
      * @return mixed|null
      */
-    static function funcArrayGet(&$arr, $key, $def = null)
+    static function get(&$arr, $key, $def = null)
     {
         if (is_array($arr))
         {
@@ -26,13 +27,14 @@ trait TraitHelperArray
         return $def;
     }
 
+
     /**
      * 打乱数组顺序
      *
      * @param $arr
      * @return array
      */
-    static function funcArrayRand(&$arr)
+    static function rand(&$arr)
     {
         if (is_array($arr))
         {
@@ -50,25 +52,14 @@ trait TraitHelperArray
         return $arr;
     }
 
-
     /**
      * 删除数组某一项，并重新排序下标
      * @param array $arr
-     * @param $del_key
+     * @param array $keys
      * @return array
      */
-    static function funcArrayDelByKey(&$arr, $del_keys)
+    static function del(&$arr, $keys = [])
     {
-        $keys = [];
-        if (is_array($del_keys))
-        {
-            $keys = $del_keys;
-        }
-        else
-        {
-            $keys = [$del_keys];
-        }
-
         foreach ($keys as $key)
         {
             if (array_key_exists($key, $arr))
@@ -83,12 +74,11 @@ trait TraitHelperArray
 
 
     /**
-     * 按某字段排序
-     * @param $arr
-     * @param $key
-     * @param $sort 排序方式，SORT_ASC：顺序；SORT_DESC：倒序；
+     * @param array $arr
+     * @param string $key
+     * @param int $sort 排序方式，SORT_ASC：顺序；SORT_DESC：倒序；
      */
-    static function funcArrayOrderByKey(&$arr, $key, $sort)
+    static function order(&$arr, $key, $sort)
     {
         $arr_val = array_column($arr, $key);
         array_multisort($arr_val, $sort, $arr);
