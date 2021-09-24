@@ -9,7 +9,7 @@ use XWX\Common\Traits\Helpers\TraitHelperCarbon;
 use XWX\Common\Traits\Helpers\TraitHelperStr;
 
 /**
- * 帮助类
+ * 帮助类x
  *
  * Class H
  * @package XWX\Common
@@ -63,6 +63,7 @@ class H
         $a = $radLat1 - $radLat2;
         $b = $radLng1 - $radLng2;
 
+        
         $distance = 2 * asin(sqrt(pow(sin($a / 2), 2) + cos($radLat1) * cos($radLat2) * pow(sin($b / 2), 2)));
         $distance = $distance * $EARTH_RADIUS;
 //        $distance = round($distance * 10000) / 10000;
