@@ -21,7 +21,7 @@ class TestBase extends TestCase
 
 
     /**
-     * 事务通用方法
+     * 事务通用方法，test
      *
      * @param callable $test_mid
      * @return XReturn
