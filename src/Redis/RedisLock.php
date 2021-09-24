@@ -37,6 +37,7 @@ class RedisLock
      */
     function getRedis()
     {
+        
         return $this->pub_redis;
     }
 
@@ -60,7 +61,7 @@ class RedisLock
         $lock = $redis->rawCommand('set', $lock_key, $lock_token, 'ex', $lock_s, 'nx');
         if ($lock == null)
         {
-            //加锁失败
+            //加锁失败，redis
             return null;
         }
 
